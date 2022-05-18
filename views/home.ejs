@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="img/icons/logo.png" type="image/icon">
+    <link rel="stylesheet" href="/css/home.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/recruiters.css">
+</head>
+<body>
+    <%- include('templates/header-1.ejs') -%>
+    <div class="main_home display_flex_home_class">
+        <div class="head">
+            <video autoplay muted loop id="myVideo">
+                <source src="/vid/campustour_iiitdm.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+              <!-- <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/pMNeYGckAc4?controls=0&autoplay=1&vq=720hd&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </div>
+        <div class="about_flex">
+            <div class="about_head">About IIITDM Kancheepuram</div>
+            <div class="main_about_body">
+                <p>Indian Institute of Information Technology Design and Manufacturing (IIITDM) Kancheepuram is an Institute of National Importance, established by the MHRD, Government of India in 2007 with the mandate of specializing in design and manufacturing oriented engineering education and research. Human resource development reforms of the past have helped India to attain global recognition in knowledge and IT enabled services. A strong foothold in the design market will propel the nation's growth and IIITDMs are a result of the Government of India's vision to produce next generation engineers equipped with design and manufacturing skills.</p>
+                <p>The institute provides the ambience where creativity and new ideas flourish, producing leaders of tomorrow by imparting learning blended with excellence. The dynamic and constantly evolving academic program reflects the institute's commitment to stay abreast with pushing the frontiers of knowledge worldwide. Extracurricular activities enjoy equal importance towards overall development of students, making them fit for the challenges of the corporate world.</p>
+            </div>
+        </div>
+        <div class="statictics__flex">
+            <div class="statictics_head"><a href="/statistics">Statistics</a></div>
+            <div class="main_statictics_body">
+                <div class="main_statictics_body_numbers">
+                    <h1>176</h1>
+                    <p>Total Offers</p>
+                </div>
+                <div class="main_statictics_body_numbers">
+                    <h1>102+</h1>
+                    <p>Companies visited</p>
+                </div>
+                <!-- <div>
+                    <h1>500+</h1>
+                    <p>Students for Heigher Studies</p>
+                </div> -->
+                <div class="main_statictics_body_numbers">
+                    <p><bold style="font-size:2.5rem;">42</bold> LPA</p>
+                    <p>Highest Package</p>
+                </div>
+            </div>
+        </div>
+        <div class="director_message_flex">
+            <div class="director_message_head">Director's Message</div>
+            <div class="main_director_message_body">
+                <div class="director_message_body">
+                    <p>At the outset, I extend my warm greetings on behalf of IIITDM Kancheepuram and
+                        on my personal behalf. IIITDM Kancheepuram is a unique Institution of National
+                        importance with a special mandate to produce quality engineers in the field of
+                        Electronics and Communication Engineering, Computer Science and Engineering,
+                        Mechanical Engineering and Smart Manufacturing with a special thrust to IT,
+                        Design, and Manufacturing.</p>
+                    <p>Unlike outputs from other technical institutions, our products are imbibed with
+                        core courses along with special knowledge in IT, Design and Manufacturing. The
+                        unique curriculum is framed keeping Industry 4.0 standard in mind and has
+                        Three IT courses, Six Design and Manufacturing courses across the disciplines.
+                        The students undertake interdisciplinary projects leading to smart products. The
+                        curriculum also supports three months summer internship followed by a semester
+                        duration industry projects.</p>
+                    <p>IIITDM has a strong industry connect with MoUs signed for collaborative product
+                        oriented Research and Development. The strong faculty base graduated from top
+                        tech schools engage the students in R&D activities to make them innovative and
+                        future thinkers. Since inception, IIITDM has been a meeting point of ideas and
+                        congregation of best academic practices.</p>
+                    <p>Overall the students groomed up in a conducive environment are industry ready
+                        by the time they pass out from IIITDM and and I am sure they are industry-ready
+                        and productive from day one. I welcome you once again to realize your experience
+                        with IIITDM faculty and students.</p>    
+                </div>
+             <!--    <div class="director_message_image">
+                   <img class="img_home_page" src="/img/director.jpg">
+                </div>-->
+            </div>
+        </div>
+        <div class="home_page_notification_flex">
+            <div class="main_home_notification_body">
+                <div class="home_notification_image">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide img_home_page_carousel" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100 img_home_page_carousel" src="https://skilloutlook.com/wp-content/uploads/2019/07/Ms.-Dheepika-K.-receiving-Institute-Gold-Medal-for-All-Rounder-of-Graduating-Batch-from-Dr.-Koppillil-Radhakrishnan-2nd-R-Former-Chairman-ISRO-during-IIITDM-Kancheepuram-Convocation.jpg" alt="First slide">
+                          </div>
+                          <!-- <div class="carousel-item">
+                            <img class="d-block w-100 img_home_page_carousel" src="https://images.unsplash.com/photo-1560846389-956694677531?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100 img_home_page_carousel" src="https://images.unsplash.com/photo-1592329347810-258afdd206bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80" alt="Third slide">
+                          </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="home_notification_body">
+                    <div class="noticification_head">Notification</div>
+                    <div class="home_notification_body_content">
+                        <div class="home_notification_content">G. Himaja (COE16B017) and G.Meghana (COE16B041) got an offer from Adobe (package: 42 Lakhs)</div>
+                        <div class="home_notification_content">Navya Bora and Sowbarnika R got an offer from AMAZON, 28 Lakhs</div>
+                        <div class="home_notification_content">Dheepika K (EVD14I009) got an offer from NVIDIA GRAPHICS INDIA, 14 Lakhs</div>
+                        <div class="home_notification_content">Eashan, CED15I043 has got 2 offers(AMD R&D, Bangalore and Hitachi, Japan)</div>
+                        <div class="home_notification_content">Sandesh Bhardwaj (ESD15I005) has received an internship offer from Bosch, Bangalore</div>
+                        <div class="home_notification_content">Dharmesh Harsha (ESD15I018) has received an internship offer from Trimble Inc. Chennai</div>
+                        <div class="home_notification_content">Saravana Balaji (2015CED Batch) got an offer from Google India</div>
+                        <div class="home_notification_content">ROHITH REDDY (Third Year CS) Received an Internship Offer from Microsoft</div>
+                        <div class="home_notification_content">Aneesh D H (COE16B001) got an offer from Google India</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block1 recruiters_carousel_home_flex">
+            <div class="our_recruter_home_carouse">Our Recruiters</div>
+            <!-- <h3 class="blue headline text-center container">OUR RECRUITERS</h3> -->
+        
+            <div class="carousel" data-flickity='{ "groupCells": false, "autoPlay": 1500 ,"pageDots": false}'>
+                
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/21.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/22.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/23.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/24.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/25.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/26.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/27.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/28.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/29.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/30.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/31.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/32.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/33.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/34.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/35.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/36.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/37.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/38.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/39.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/40.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/41.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/42.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/43.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/44.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/45.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/46.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/47.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/48.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/49.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/50.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/51.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/52.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/53.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/54.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/55.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/56.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/57.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/58.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/59.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/60.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/61.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/62.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/63.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/64.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/65.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/66.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/67.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/68.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/69.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/70.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/71.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/72.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/73.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/74.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/75.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/76.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/77.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/78.png" alt="logo1"> </div>
+                <div class="carousel-cell col-10 col-sm-6 col-md-5 col-lg-3"><img class="our-company-logo" src="https://www.iiitdm.ac.in/img/placements/company/79.png" alt="logo1"> </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script src="/scripts/recruiters.js"></script>
+    <%- include('templates/footer-1.ejs') -%>
+</body>
+<!-- <script src="/scripts/home.js"></script> -->
+</html>

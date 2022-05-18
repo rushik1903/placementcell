@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/whyRecruit.css">
+    <title>Why Recruit</title>
+</head>
+<body style="width:100%;margin: 0% 0% 0% 0%;">
+  
+    <%- include('templates/header-1.ejs') -%>
+    <div class="pic">
+        <!-- <img src="img/whyrecruit/campus.jpg" style="width: 100%;height:100%;"> -->
+        <div class="centered"><b>Why Recruit</b></div>
+    </div>
+    <br><br>
+    <div class="block">
+        <div class="whyrecruit">
+            <h1 id="heading">Why Recruit Us?</h1>
+            <hr align="left" color="black" style="width: 60%;">
+            <ul>
+                <li><b>Students:</b> Our students have proven themselves at school level as well as getting through the cutthroat nationwide competitive JEE examinations.</li><br>
+                <li><b>Faculty & Curriculum:</b>  Over 80% of our faculty are PhDs and are actively involved in journal publications and research projects. With such experienced professors at the helm and our unique design-centric curriculum, our students graduate with strong technical expertise and a holistic approach to solving real-world problems.</li><br>
+                <li><b>Industrial Experience:</b>  Students are exposed to a 5 month internship programme where they are encouraged to be part of the decision making process in all aspects of product development; from business to design to technology with an option to pursue it in the Institute’s in-house incubator MadeIT also. This gives them an extra edge when being recruited as they can adapt much more quickly to their respective careers.</li><br>
+                <li><b>Balanced Personas:</b>  Students are given the freedom to set up their own respective societies and clubs based on their passions and express their form of art be it in science, technology or culture.</li>
+            </ul>
+        </div>
+        <div class="slideshow-container" id="slideshow1" align="center">
+            <div class="mySlides">
+              <img src="img/whyrecruit/rec_1.jpg" >
+            </div>
+            
+            <div class="mySlides">
+              <img src="img/whyrecruit/rec_2.jpg">
+            </div>
+            
+            <div class="mySlides">
+              <img src="img/whyrecruit/rec_3.jpg">
+            </div>
+
+            <div class="mySlides">
+                <img src="img/whyrecruit/rec_4.jpg">
+              </div>
+              
+              <div class="mySlides">
+                <img src="img/whyrecruit/rec_5.jpg">
+              </div>
+              
+              <div class="mySlides">
+                <img src="img/whyrecruit/rec_6.jpg">
+              </div>
+
+              <div class="mySlides">
+                <img src="img/whyrecruit/rec_7.jpg">
+              </div>
+        </div>
+    </div> 
+    <div class="block">
+        <div class="slideshow-container" id="slideshow2" align="center"> 
+            <div class="mySlides1">
+              <img src="img/whyrecruit/dc_1.jpg">
+            </div>
+            
+            <div class="mySlides1">
+              <img src="img/whyrecruit/dc_2.jpg">
+            </div>
+            
+            <div class="mySlides1">
+              <img src="img/whyrecruit/dc_3.jpg">
+            </div>
+
+            <div class="mySlides1">
+                <img src="img/whyrecruit/dc_4.jpg">
+            </div>
+
+            <div class="mySlides1">
+                <img src="img/whyrecruit/dc_5.jpg">
+            </div>
+
+            <div class="mySlides1">
+                <img src="img/whyrecruit/dc_6.jpg">
+            </div>
+        </div>
+        <div class="design_centric">
+            <h1 align="right">Design-Centric Curriculum</h1>
+            <hr align="right" color="black" style="width: 60%;">
+            <p>Industry 4.0 is transforming the paradigms of design, business, management and engineering
+                education across the globe. As the epoch of invention and engineering science wanes, innovation and engineering design that are set to take center stage, demand from the 21st century engineer, a holistic and composite know-how of design, business and management in addition to technical acumen.
+                <br><br>
+                With the current industrial standards and consumer awareness, it is necessary to design products that are easy to manufacture, efficient and also become part of users themselves.
+                <br><br>
+                To facilitate such requirements, Design has been one of the cornerstones of the institute, in line with its vision of ‘Design, Create and Innovate’. Our students are uniquely skilled owing to 3 semester long product design projects that mimic real-world ideation-to-prototype workflow systems that encourage collaboration, innovation and creativity at a granular level.
+            </p>
+        </div> 
+    </div>
+    <div class="block" style="display:inline-block">
+        <h1 id="academics">Academic Programs</h1>
+        <hr align="left" color="black" style="width: 30%;">
+    <div class="programs" align="center"> 
+        <div class="prog" align="center">
+            <button class="button"  id="b1" onmouseover="showDiv1()" style=" background-color: rgb(36, 114, 204);"><span>Bachelors </span></button><br>
+            <button class="button" id="b2" onmouseover="showDiv2()" style="background-color: rgb(230, 59, 59);"><span>Dual Degree </span></button><br>
+            <button class="button" id="b3" onmouseover="showDiv3()" style="background-color: rgb(72, 151, 72);"><span>Masters </span></button><br>
+        </div>
+        <div class="content">
+            <div id="details1">
+            <div class="details">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction1()">Computer Engineering(COE)</button>
+                    <div class="dropdown-content" id="coe">
+                        <a target="blank" href="https://www.iiitdm.ac.in/Academics/Undergraduate.php#coe">About</a>
+                        <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/COE/COE_B.Tech_Curriculum_23.12.2015.pdf">Curriculum</a>
+                        <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/COE/COE_complete_syllabus_15-07-2016.pdf">Syllabus</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction2()">Electronics and Communication Engineering(EDM)</button>
+                    <div class="dropdown-content" id="edm">
+                        <a target="blank" href="https://www.iiitdm.ac.in/Academics/Undergraduate.php#edm">About</a>
+                        <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/EDM/Curriculum_of_BTech_ECE(D%26M).pdf">Curriculum</a>
+                        <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/EDM/ECE-DM_complete_syllabus_15-07-2016.pdf">Syllabus</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction3()">Mechanical Engineering(MDM)</button>
+                    <div class="dropdown-content" id="mdm">
+                        <a target="blank" href="https://www.iiitdm.ac.in/Academics/Undergraduate.php#mdm">About</a>
+                        <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/MDM/MDM_BTech_Curriculum_23.12.2015.pdf">Curriculum</a>
+                        <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/MDM/MDM_complete_syllabus_15-07-2016.pdf">Syllabus</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction4()">Mechanical - Smart Manufacturing(MSM)</button>
+                    <div class="dropdown-content" id="msm">
+                        <a target="blank" href="https://www.iiitdm.ac.in/Academics/Undergraduate.php#msm">About</a>
+                        <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/MSM/Curriculum_of_BTech_Smart_Manufacturing.pdf">Curriculum</a>
+                        <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/MSM/MSM_syllabus.pdf">Syllabus</a>
+                        <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/MSM/MSM_Structure.pdf">Structure</a>
+                    </div>
+                </div></div>
+            </div>
+            <div id="details2" style="display:none;">
+                <div class="details">
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="myFunction5()">Computer Engineering(CED)</button>
+                        <div class="dropdown-content" id="ced">
+                            <a target="blank" href="https://www.iiitdm.ac.in/Academics/Dual.php#ced">About</a>
+                            <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/CED/Curriculum_of_CED_14-07-2016.pdf">Curriculum</a>
+                            <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/CED/CED_complete_syllabus_15-07-2016.pdf">Syllabus</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="myFunction6()">VLSI & Electronic System Design(EVD)</button>
+                        <div class="dropdown-content" id="evd">
+                            <a target="blank" href="https://www.iiitdm.ac.in/Academics/Dual.php#evd">About</a>
+                            <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/EVD/Curriculum_of_EVD_14-07-2016.pdf">Curriculum</a>
+                            <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/EVD/EVD_complete_syllabus_15-07-2016.pdf">Syllabus</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="myFunction7()">Signal Processing & Communication System Design(ESD)</button>
+                        <div class="dropdown-content" id="esd">
+                            <a target="blank" href="https://www.iiitdm.ac.in/Academics/Dual.php#esd">About</a>
+                            <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/ESD/Curriculum_of_ESD_14-07-2016.pdf">Curriculum</a>
+                            <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/ESD/ESD_complete_syllabus_15-07-2016.pdf">Syllabus</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="myFunction8()">Product Design(MPD)</button>
+                        <div class="dropdown-content" id="mpd">
+                            <a target="blank" href="https://www.iiitdm.ac.in/Academics/Dual.php#mpd">About</a>
+                            <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/MPD/Curriculum_of_MPD_14-07-2016.pdf">Curriculum</a>
+                            <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/MPD/MPD_complete_syllabus_15-07-2016.pdf">Syllabus</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="myFunction9()">Advanced Manufacturing(MFD)</button>
+                        <div class="dropdown-content" id="mfd">
+                            <a target="blank" href="https://www.iiitdm.ac.in/Academics/Dual.php#mfd">About</a>
+                            <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/MFD/Curriculum_of_MFD_14-07-2016.pdf">Curriculum</a>
+                            <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/MFD/MFD_complete_syllabus_15-07-2016.pdf">Syllabus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="details3" style="display:none;">
+                <div class="details">
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="myFunction10()">M. Des in Communication Systems(CDS)</button>
+                        <div class="dropdown-content" id="cds">
+                            <a target="blank" href="https://www.iiitdm.ac.in/Academics/Postgraduate.php#cds">About</a>
+                            <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/CDS/CDS_Curriculum%2013-07-2016.pdf">Curriculum</a>
+                            <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/CDS/Revised_curricuum_of_CDS.pdf">Curriculum <small>from 2017</small></a>
+                            <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/CDS/CDS_Syllabus_complete_13-07-2016.pdf">Syllabus</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="myFunction11()">M. Des in Electronic Systems(EDS)</button>
+                        <div class="dropdown-content" id="eds">
+                            <a target="blank" href="https://www.iiitdm.ac.in/Academics/Postgraduate.php#eds">About</a>
+                            <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/EDS/EDS_Curriculum_13-07-2016.pdf">Curriculum</a>
+                            <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/EDS/Revised_curricuum_of_EDS.pdf">Curriculum <small>from 2017</small></a>
+                            <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/EVD/EVD_complete_syllabus_15-07-2016.pdf">Syllabus</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="myFunction12()">M. Des. Mechanical Systems(MDS)</button>
+                        <div class="dropdown-content" id="mds">
+                            <a target="blank" href="https://www.iiitdm.ac.in/Academics/Postgraduate.php#mds">About</a>
+                            <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/MDS/MDS_Curriculum_13-07-2016.pdf">Curriculum</a>
+                            <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/MDS/Revised_curricuum_of_MDS.pdf">Curriculum <small>from 2017</small></a>
+                            <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/MDS/MDS_Syllabus_complete_13-07-2016.pdf">Syllabus</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="myFunction13()">M. Tech - Smart Manufacturing(SMT)</button>
+                        <div class="dropdown-content" id="smt">
+                            <a target="blank" href="https://www.iiitdm.ac.in/Academics/Postgraduate.php#smt">About</a>
+                            <a target="blank" href="https://www.iiitdm.ac.in/img/curriculum/SMT/M.Tech._Smart_Manufacturing_curriculum.pdf">Curriculum</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slideshow-container" id="slideshow3" align="center">
+            <div class="mySlides2">
+              <img src="img/whyrecruit/rec_2.jpg">
+            </div>
+            
+            <div class="mySlides2">
+              <img src="img/whyrecruit/rec_3.jpg">
+            </div>
+            
+            <div class="mySlides2">
+              <img src="img/whyrecruit/rec_1.jpg">
+            </div>
+
+            <div class="mySlides2">
+                <img src="img/whyrecruit/dc_5.jpg">
+            </div>
+        </div>
+    </div>
+    </div>
+    <%- include('templates/footer-1.ejs') -%>
+    <script src="/scripts/whyRecruit.js"></script>
+</body>
+</html>
