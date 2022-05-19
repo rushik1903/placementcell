@@ -14,7 +14,7 @@ route.get('/contactUs',(req,res)=>{
     res.render('contactUs');
 })
 route.get('/whyRecruit',(req,res)=>{
-    res.render('whyRecruit');
+    res.render('newRecruit/whyiiitdm');
 })
 route.get('/recruiters',(req,res)=>{
     res.render('recruiters');
