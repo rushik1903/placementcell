@@ -1,0 +1,56 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.stats-container{
+    /* padding-left: 4rem;
+    padding-right: 4rem; */
+}
+.stats-container-item{
+    /* width: 100%; */
+    padding: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* box-shadow: 0 0 10px black; */
+}
+.stats-container-item:first-child{
+    background-image: url('/img/iiit1.jpg');
+    height: 60vh;
+    background-attachment: fixed;
+    box-shadow: unset;
+    margin: unset;
+    padding: unset;
+    justify-content: unset;
+}
+.stats-container-item-head{
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+    background-color: var(--custom-extra-dark);
+    color: var(--custom-nav-color)!important;
+    padding-top: 1rem;
+    font-family: 'rubik';
+}
+.stats-container-item h1{
+    color: teal;
+}
+@media screen and (max-width:660px){
+    .stats-container-item{
+        /* padding: unset; */
+        margin-left: unset;
+        margin-right: unset;
+    }
+    .stats-container-item h1{
+        font-size: 7vw;
+    }
+    .stats-container-item-head{
+        font-size: 1rem;
+    }
+}

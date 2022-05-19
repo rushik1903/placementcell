@@ -1,0 +1,229 @@
+.main_home
+{
+    /* background-image: ("/img/iiit1.jpg"); */
+    /* background-attachment: fixed; */
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
+.home_notification_content
+{
+    /* border: 2px solid black; */
+    line-height: 1.8rem;
+    padding: 1rem;
+    text-align: center;
+    background: var(--custom-light);
+    margin: 7px;
+}
+
+.home_notification_image
+{
+    padding: 1rem;
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+/* .carousel-inner,.carousel
+{
+    border-radius: 30px;
+} */
+
+.img_home_page
+{
+    height: 100%;
+    object-fit: contain;
+}
+
+.img_home_page_carousel
+{
+    height: 400px;
+    object-fit: cover;
+}
+
+/* .about_flex,.statictics__flex,.director_message_flex,.home_page_notification_flex
+{
+    margin: 10px 0;
+} */
+
+.main_home .head
+{
+    width: 100%;
+    height: 450px;
+}
+#myVideo {
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: -99;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 20%;
+    /* top: -50px; */
+  }
+.main_home .about_flex
+{
+    background-color: var(--custom-extra-light);
+    border-top-left-radius: 4vh;
+    border-top-right-radius: 4vh;
+}
+
+.about_flex,
+.statictics__flex,
+.director_message_flex,
+.home_page_notification_flex
+{
+    padding: 20px 8%;
+}
+.statictics_head a:link,
+.statictics_head a:visited
+{
+    color: white;
+    text-decoration: none;
+}
+.statictics_head a:active
+{
+    color: var(--custom-light);
+}
+.about_head,.statictics_head,.director_message_head,.noticification_head,.our_recruter_home_carouse
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.main_about_body,.main_statictic_body,.main_director_message_body
+{
+    font-size: 20px;
+    line-height: 1.5rem;
+    padding: 10px 0;
+    text-align: justify;
+    /* word-spacing: 2rem; */
+}
+
+.statictics__flex
+{
+    background-color: rgba(0, 23, 85, 0.5);
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+.main_statictics_body
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: 3em 0;
+    justify-content: space-around;
+    text-align: center;
+}
+.director_message_flex
+{
+    /* background-color: var(--custom-extra-light); */
+    background-color: rgb(149, 205, 245);
+    /* flex-wrap: wrap-reverse; */
+}
+
+.main_director_message_body
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: unset;
+    flex-wrap: wrap-reverse;
+}
+.director_message_body::-webkit-scrollbar {
+    /* width: 10px; */
+    display: none;
+  }
+.home_notification_body_content::-webkit-scrollbar {
+    /* width: 10px; */
+    display: none;
+  }
+.director_message_body
+{
+    scrollbar-width: none;
+    overflow-y: scroll;
+    height: 300px;
+    margin-right: 20px;
+    width: 70%;
+}
+
+.home_page_notification_flex
+{
+    background-color: rgba(0, 23, 85, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.main_home_notification_body
+{
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 1rem; */
+    justify-content: center;
+}
+
+.home_notification_body
+{
+    color: white;
+    height: 25rem;
+    font-size: 20px;
+    line-height: 2.5em;
+    margin: 1rem;
+    padding: 2rem;
+    width: 40%;
+    background-color: var(--custom-dark);
+}
+.main_statictics_body_numbers{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.home_notification_body_content
+{
+    scrollbar-width: none;
+    overflow-y: scroll;
+    height: 18rem;
+}
+.our-company-logo{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-height: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.carousel-cell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recruiters_carousel_home_flex
+{
+    padding: 2rem 0 3rem 0!important;
+    /* background-color: #d6d3d3; */
+    background-color: var(--custom-light);
+    
+    /* background-color: rgb(67,167, 239); */
+}
+
+@media only screen and (min-width : 150px) and (max-width : 780px) {
+    .director_message_body,.home_notification_image,.home_notification_body{
+        width:100%;
+        text-align: center;
+    }
+    .director_message_image
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 1rem
+    }
+    .home_page_notification_flex {
+        padding: 20px 4%;
+    }
+    .home_notification_body
+    {
+        padding: 10px;
+    }
+}

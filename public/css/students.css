@@ -1,0 +1,36 @@
+li{
+    /* text-align: justify; */
+    text-justify: inter-word;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+.block{
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.block h1{
+    /* background-color: rgb(72, 135, 252); */
+    background-image: linear-gradient(to right,var(--custom-dark),var(--custom-light));
+    padding: 1rem;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+    color: rgb(255, 255,255);
+}
+.block > ul{
+    border: 1px solid black;
+    border-top: unset;
+    border-radius: 0 0 10px 10px;
+    margin: 0;
+}
+
+@media screen and (max-width:1000px){
+    .block{
+		padding: unset;
+		min-width: unset;
+		width: 100%;
+	}
+}

@@ -1,0 +1,98 @@
+body{
+    background-color: rgb(231, 231, 231);
+}
+.topImage{
+    font-size: 8vw;
+    height: 50vh;
+    background-image: url("/img/facilities/bg1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+.topImageTitle{
+    text-align: center;
+    width: 100%;
+    color: white;
+    /* text-shadow: 0 0 20px black; */
+    background-color: #00264d;
+    font-family: "rubik";
+    font-size: 3.5rem;
+    padding-top: .5rem;
+}
+.custom-container-section{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.custom-container{
+    background-image: url("/img/facilities/bg2.jpg");
+    background-position: center;
+    background-attachment: fixed;
+}
+.custom-container-section:nth-child(odd){
+    background-color: lightgrey;
+}
+.section-description{
+    padding-right: 4vw;
+    padding-left: 4vw;
+    font-size: 1.5rem;
+}
+.section-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px black;
+    background-color: white;
+    width: 95%;
+}
+/* .section-box:nth-child(odd){
+    background-color: white;
+}
+.section-box:nth-child(even){
+    background-color: grey;
+} */
+.section-box-item{
+    padding: 2rem;
+}
+.section-custom-para{
+    width: 50vw;
+}
+.section-custom-img{
+    width: 30rem;
+    height: 25rem;
+}
+@media screen and (max-width:1000px){
+    .topImage{
+        min-height: unset;
+        font-size: 3.5rem;
+    }
+    .section-custom-img{
+        width: 25rem;
+        height: 20rem;
+    }
+    .section-custom-para{
+        width: unset;
+    }
+    .section-box{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .section-custom-para h1{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:500px){
+    .section-custom-img{
+        width: 80vw;
+        height: 60vw;
+    }
+    .section-custom-para h1{
+        font-size: 1.5rem;
+    }
+}
