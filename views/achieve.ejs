@@ -1,62 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <link rel="stylesheet" href="/css/achieve.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Achievements</title>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="/css/achieve.css" />
+  </head>
+  <body>
     <%- include('templates/header-1.ejs') -%>
-    <div class="overlay" style="">
-        <h1 class="text-center" style=" font-size: 50px; font-family: rubik ;">
-            <div style="background-color: #00264d; padding: 1%; color: white;"><b>Achievements</b></div>
-          </h1>
-        </div>
-    <!-- <div style="height: 5rem;" id="achievments"> 
-        
+    <!-- Achievements heading -->
+    <!-- <div class="overlay">
+      <div style="background-color: #00264d; padding: 1%; color: white;">
+        <h1 class="text-center" style="font-size: 2rem; font-family: rubik;font-weight: bold;">
+          Student Achievements
+        </h1>
+      </div>
     </div> -->
-    
-    <div id="s_achievments">
-      
-    
-      <!-- <h2 class="subheading jumbotron bg-transparent otto ">Students Achievements-Recent</h2>     -->
-        <ul class="list-group list-group-flush text-center ">
-            <li class="list-group-item">IIITDM Student team participated in Singapore AUV Challenge SAUVC’ 19,finished 17th overall</li>
-            <li class="list-group-item">Team InnovIT of IIITDM Kancheepuram won first prize in Ford GME Hackathon on
-                6th and 7th April for creating an effective feedback system.</li>
-            <li class="list-group-item">IIITDM student team won in medtech Hackathon conducted at IIT Madras.</li>
-            <li class="list-group-item">Mr. Akash Sunil Kale and team won prize at National level open challenge competition
-                organised by MoD.</li>
-            <li class="list-group-item">Aneesh DH won at code gladiators coding contest conducted by TechGig.</li>
-            <li class="list-group-item">Ms. Jannatul Bashar and Mr. Mahammaed Sehzad Allia presented research papers,
-                respectively under Design and Heat transfer streams, at the International Conference
-                at NIT Warangal, and won the Best paper award in their respective category. </li>
-            
-            <li class="list-group-item">Mr.Idury Satya Krishna won the first prize in student innovative project competition
-                under the postgraduate category at InCAP 2018, Hyderabad</li>
-            <li class="list-group-item">Ms. Adeline Melita won the second prize in “Student Innovative Project Competition”
-                under postgraduate category at InCAP 2018, Hyderabad</li>
-            
-            <li class="list-group-item">CHANDRA SAI SRINIVAS (EVD15I014) has secured First Place in Design with WEBENCH, Second Place in Linear Integrated Circuits, Third Place in Embedded System using MSP430 in the Online Contest conducted by the Texas Instruments University Program</li>
-            
-            <li class="list-group-item">Aneesh D H (COE16B001) secured AIR 94 in GATE 2020</li>
-            <li class="list-group-item">Dharmesh Harsha All India Rank - 34 in Biomedical Engineering (BME), GATE 2020</li>
-            <li class="list-group-item">Madhuvanthi EVD2016 batch got AIR 190 in GATE 2020 in ECE.</li>
-            <li class="list-group-item">Mr.Sai Srivathsan has secured 6/28 in Tamil Nadu cricket association league</li>
-            <div class="container-fluid jumplink text-center">
-              <a href="http://www.iiitdm.ac.in/Others/noti.php#:~:text=Achievements" target="_blank" >View more</a>
+    <div class="overlay heading-bg">
+        <h1>Student Achievements</h1>
+    </div>
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators" id="mycarousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://www.w3schools.com/bootstrap4/la.jpg"
+            alt="Los Angeles"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Award-1</h3>
+            <p>Image Receiving Award-1</p>
           </div>
-            
-          </ul>
-    
-    
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="https://images.pexels.com/photos/1933239/pexels-photo-1933239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=1100&dpr=1"
+            alt="Los Angeles"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Award-2</h3>
+            <p>Image Receiving Award-2</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="https://www.w3schools.com/bootstrap4/chicago.jpg"
+            alt="Chicago"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Award-3</h3>
+            <p>Image Receiving Award-3</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="https://www.w3schools.com/bootstrap4/ny.jpg"
+            alt="New York"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Award-4</h3>
+            <p>Image Receiving Award-4</p>
+          </div>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
     </div>
-    <div style="height: 10px;"> 
-    
-    </div>
-    
     <%- include('templates/footer-1.ejs') -%>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

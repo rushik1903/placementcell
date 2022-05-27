@@ -1,66 +1,58 @@
-body{
-    background-color: #eee;
-    text-align: center;
-    overflow-x: hidden;
+body {
+  background-color: #eee;
+  text-align: center;
+  overflow-x: hidden;
+}
 
+.carousel-inner img {
+  width: 100%;
 }
-.jumplink{
-    text-align: right;
-    font-size: 1.25rem;
-    margin-right: 2%;
-    padding: 2.5%; 
+.carousel .carousel-item {
+  max-height: 80vh;
 }
+
+.item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+#mycarousel-indicators > li {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+.carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+}
+
+/* Overlay on carousel */
 .overlay {
-   
-    background-image: url(https://www.iiitdm.ac.in/placement/resources/background.jpg);
-    height: 400px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0.9;
-    background-position: center;
-    background-size: cover;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  z-index: 1;
 }
 
-h2{
-    margin: 5%;;
+.heading-bg {
+  background-color: #00264d;
+  padding: 0.5%;
+  color: white;
 }
-#s_achievments{
-    padding: 5%;
-    background-color: lightgray;
-    /* background-image: url('https://image.freepik.com/free-vector/hand-holding-trophy_1284-3981.jpg '); */
-    /* background-image: url("https://images.unsplash.com/photo-1583782385538-c55baa9420ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"); */
-    background-attachment: fixed;
-    background-position: center;
-    background-size: 100%;
+.heading-bg > h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: rubik;
+  font-weight: bold;
 }
-html, 
-body, 
-.carousel, 
-.carousel-inner, 
-.carousel-inner .item {
-    height: 100%;
-}
-
-#s_achievments li{
-    padding: 12px;
-    margin: 1.5px;
-    transition: 0.1s;
-    border-radius: 5px;
-}
-#s_achievments li:hover{
-    color:black;
-    font-weight: 500;
-    transform: scale(1.009);
-}
-
-@media only screen and (min-width : 150px) and (max-width : 780px) {
-    .jumplink{
-        text-align: center;
-        margin: 5%;
-    }
-    #s_achievments .text-center div{
-        font-size: 30px;    
-    }
+@media only screen and (min-width: 150px) and (max-width: 780px) {
+  .jumplink {
+    text-align: center;
+    margin: 5%;
   }
+  #s_achievments .text-center div {
+    font-size: 30px;
+  }
+}
