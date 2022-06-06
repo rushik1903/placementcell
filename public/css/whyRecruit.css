@@ -1,163 +1,210 @@
-
-.body{
-  width:100%;
-  margin: 0% 0% 0% 0%;
-  padding: 0% 0% 0% 0%;
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    --var--font-weight : 400;
+    --var--font-family : 'Inter';
+    --var--font-style : 'normal';   
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
 }
+
+
+.main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   /* height: fit-content;*/
+}
+
+
 .centered {
-  position: absolute;
-  text-align: center;
-  color: white;
-  font-size: 3.5rem;
-  font-family: Rubik;
-  width:100%;
-  background-color: var(--custom-extra-dark);
-  /* padding-top: 7%; */
-}
-.block{
-  margin:2% 5% 3% 5%;
-  padding: 2% 2% 1% 2%;
-  font-size: 1.1rem;
-  width:auto;
-  background-color: white;
-  color:black;  
-  display:flex;  
-  height:auto;
-  box-shadow: 2px 2px 10px rgb(170, 169, 169);
-}
-.pic{
-  width: 100%;
-  height: 30vw;
-  margin:0% 0% 0% 0%;
-  padding:0% 0% 0% 0%;
-  display: inline-flex;
-  background-image: url("/img/whyrecruit/campus.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  /* background-position: 40px; */
-}
-.whyrecruit{
-  padding-right: 2%;
-  padding-left: 2%;
-  padding-bottom: 0%;
-  text-align: left;
-}
-.design_centric{
-padding-right: 2%;
-padding-left: 2%;
-padding-bottom: 0%;
-text-align: justify;
-}
-.mySlides {
-display: none
-}
-.mySlides1 {
-display: none
-}
-.mySlides2 {
-  display: none
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 3.5rem;
+    font-family: Rubik;
+    width:100%;
+    background-color: var(--custom-extra-dark);
+    padding-top: 10px;
   }
-.fade {
--webkit-animation-name: fadeout;
--webkit-animation-duration: 2s;
-animation-name: fadeout;
-animation-duration: 2s;
+
+.section
+{   
+    width: 100%;
+    height: 140vh;
+    background: #C4C4C4;
+    background-image: url("/img/whyrecruit/campus.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+   
+    
 }
 
-@-webkit-keyframes fade {
-from {opacity: .4} 
-to {opacity: 1}
+.section1
+{
+    margin-top: 70px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-@keyframes fade {
-from {opacity: .4} 
-to {opacity: 1}
-}
-.programs{
-  display:flex;
-  width: auto;
-  align-content: center;
-  margin: 2% 0% 2% 0%;
-} 
-.prog{
-  align-items: center;
-  margin: 0% 0% 0% 0%;
-  width:auto;
-}
-.button {
-  border-radius: 4px;
-  background-color: #f4511e;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 1.2rem;
-  padding: 1.4%;
-  width: 250px;
-  height:50px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;  
-  outline: none;
-}
-.button span {
-  cursor: pointer;
-  position: relative;
-  transition: 0.5s;
-}
-.button span:after{
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-.button:focus span{
-  padding-right: 25px;
-}
-.button:hover span {
-  padding-right: 25px;
+.whyrecurit
+{
+    border: none;
+    position: absolute;
+    background: #7D7D7D;
+   
+    height: fit-content;
+    width: auto;
+    max-width: 55vw;
+
+    margin: 30px 40px 20px;
+    padding: 10px;
+    border-radius: 6px;
+
 }
 
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
+.top
+{
+    font-family: var(--var--font-family);
+    font-style: var(--var--font-style);
+    font-weight: var(--var--font-weight);
+    font-size: 40px;
+    line-height: 48px;
+    cursor: pointer;
+    color: #FFFFFF;
+
 }
-#b1{
-  outline: unset;
+
+.contents
+{
+    font-family: var(--var--font-family);
+    font-style: var(--var--font-style);
+    font-weight: var(--var--font-weight);
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
 }
-#b3{
-  border: none;
-  outline: unset;
+
+.section2
+{
+    width: 100%;
+    height: fit-content;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    padding: 20px;
 }
-#b2{
-  outline: unset;
+
+.design_centric
+{
+    width: 850px;
+    height: 570px;
+    max-width: auto;
+    margin-left: 20px;
+    padding: 20px;
+    padding-bottom: 30px;
+    background: #7D7D7D;
+
 }
-.content{
-  padding: 0% 0% 0% 0%;
-  margin: 0% 0% 0% 0%;
+
+.mySlides1
+{
+    display: none;
+    padding-right: 20px;
 }
-img {
-  vertical-align: middle;
+
+
+#slideshow2 img
+{
+    width: 540px;
+    height: 570px;
+}
+
+.section3
+{
+    width: 100%;
+    padding: 15px;
+    height: 750px;
+}
+
+.academic
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+    padding: 20px;
+    user-select: none;
+}
+
+.programs
+{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+
+.programname
+{
+    border: none;
+    background: linear-gradient(0deg, #7A7A7A, #7A7A7A), linear-gradient(0deg, #7A7A7A, #7A7A7A), #7A7A7A;
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+    transform: translate(140px, 30px);
+    padding: 1.4%;
+    transition: all 0.5s;
+    cursor: pointer; 
+    outline: none;
+
+}
+
+.programname 
+{
+    font-family: 'Inter'; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    justify-content: center;
+}
+
+.content
+{
+    margin-top: 40px;
+    margin-left: 20px;
 }
 
 .dropbtn{
-  background-color: white;
-  color: blue;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  height:auto;
-  padding: 2% 0% 2% 0%;
-  margin: 0% 0% 0% 0%;
-  box-shadow: 1px 1px 10px rgb(170, 169, 169);
-  border-radius: 5px;
-  min-width: 35vw;
-  outline: none;
-}
-p{
-  text-align: right;
-}
+    background: #7A7A7A;
+    text-decoration-line: underline;
+    color: #00FFD1;
+    font-size: 16px;
+    border: none;
+    height:auto;
+    padding: 2% 0% 2% 0%;
+    box-shadow: 1px 1px 10px rgb(170, 169, 169);
+    border-radius: 5px;
+    min-width: 360px;
+    outline: none;
+  }
+
+
 .dropdown {
   position: relative;
   align-self: center;
@@ -170,258 +217,174 @@ p{
 
 .dropdown-content{
   display: none;
-  /*position:relative;*/
   position:relative;
   background-color: #f1f1f1;
   min-width: 160px;
-  /*margin-right: 10%;
-  margin-left: 10%;*/
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-#slideshow1{
-  margin-top: 10%;
-  margin-bottom: 5%;
-}
-#slideshow2{
-  margin-top: 8%;
-  margin-bottom: 4%;
-  margin-right: 0%;
-}
-#slideshow3{
-  margin-top: 1%;
-  margin-bottom: 2%;
-}
-#slideshow1 img{
-  width:350px;
-  height:300px;
-}
-#slideshow2 img{
-  width:350px;
-  height:270px;
-}
-#slideshow3 img{
-  width:300px;
-  height: 200px;
-}
+
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  position: relative;
-}
-.show {display: block;}
-.dropdown-content a:hover {background-color: #ddd;}
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    position: relative;
+  }
 
-/*.dropdown:hover .dropdown-content {display: block;}*/
+  .show {display: block;}
+  .dropdown-content a:hover {background-color: #ddd;}
 
-.dropdown:hover .dropbtn {color: black;}
+  .dropdown:hover .dropbtn {color: black;}
 
-@media screen and (max-width:1024px){
-  .programs{
-    align-self: center;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 2% 5% 2% 15%;
-  }
-  .content{
-    width:52%;
-  }
-  #slideshow1{
-    margin-left: 0%;
-    margin-right: 0%;
-    width:auto;
-  }
-  #slideshow1 img{
-    width:350px;
-    height: 300px;
-    margin:0px 0px 0px 0px;
-    padding:0px 0px 0px 0px;
-  }
-  #slideshow2{
-    margin-left: 0%;
-    margin-right: 0%;
-    width:auto;
-  }
-  #slideshow2 img{
-    width:350px;
-    height: 300px;
-    margin:0px 0px 0px 0px;
-    padding:0px 0px 0px 0px;
-  }
-  #slideshow3{
-    margin-left: 0%;
-    margin-right: 0%;
-    width:auto;
-  }
-  #slideshow3 img{
-    width:350px;
-    height: 300px;
-    margin:0px 0px 0px 0px;
-    padding:0px 0px 0px 0px;
-  }
-  .programs .slideshow-container{
-    align-self: center;
-    margin: 2% 30% 2% 25%;
-  }
+@media screen and (max-width:780px)
+{
+    .section2
+    {
+        display: block;
+        height: fit-content;
+    }
+    .design_centric
+    {
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: fit-content;
+    }
+    #slideshow2
+    {
+        margin-left: 25%;
+        margin-right: 10%;
+    }
+    #slideshow2 img
+    {
+        width: 80%;
+        height: 250px;
+    }
+    .section3
+    {
+        padding: 0px;
+        height: fit-content;
+
+    }
+    .programs
+    {
+        grid-template-columns: auto;
+    }
+    .dropdown
+    {
+        display: block;
+    }
+    #slideshow2 img
+    {
+      width: 300px;
+      height: 300px;
+    }
+
+
 }
-@media screen and (max-width:790px){
-  .programs{
-    align-self: center;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 2% 5% 2% 5%;
-  }
-  .content{
-    width:52%;
-  }
-  .programs .slideshow-container{
-    align-self: center;
-    margin: 0% 30% 0% 35%;
-  }
+
+
+@media screen and (max-width:1200px)
+{
+    .section1
+    {
+        margin: 0px;
+        padding: 0px;
+        margin-top: 90px;
+        display: block;
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .whyrecurit
+    {
+        margin: 0px;
+        padding: 0px;
+        max-width: 100%;
+        height: fit-content;
+    }
+    .design_centric
+    {
+        height: fit-content;
+        width: auto;
+    }
+    
+    .programs
+    {
+        grid-template-columns: auto auto;
+        height: 100%;
+    }
+    .section3
+    {
+        height: 100%;
+    }
+    #slideshow2
+    {
+        margin: 0px;
+    }
+    #slideshow2 img
+    {
+      width: 300px;
+      height: 450px;
+    }
 }
-@media screen and (max-width:700px){
-      .block{
-          display: flex;
-          flex-direction: column;
-          text-align: unset;
-      }
-      .whyrecruit{
-          width: 90%;
-          padding-right: 2%;
-          padding-left: 0%;
-          text-align: unset;
-      }
-      h1{
-        text-align: center;
-      }
-      .design_centric{
-          width:90%;
-          padding-right: 0%;
-          padding-left: 2%;
-          text-align: unset;
-      }
-      .slideshow-container{
-          width: 90%;
-      }
-     
-      #slideshow1 img{
-        width:300px;
-        margin:0px 0px 0px 0px;
-        padding:0px 0px 0px 0px;
-      }
-      #slideshow2 img{
-        width:300px;
-        margin:0px 0px 0px 0px;
-        padding:0px 0px 0px 0px;
-      }
-      #slideshow3 img{
-        width:300px;
-        margin:0px 0px 0px 0px;
-        padding:5px 0px 0px 0px;
-      }
-      .programs{
-          display: flex;
-          flex-direction: column;
-          margin: 0% 2% 2% 0%;
-          width:86vw;
-          align-self: center;
-      }
-      .prog{
-        align-self: center;
-        align-items: center;
-        width:auto;
-        display: flex;
-        
-      }
-      
-      .content{
-        align-self: center;
-        width:100%;
-      }
-      .details{
-        display: flex;
-        flex-direction: column;
-      }
-      .dropdown{
-        align-self: center;
-        width:100%;
-        min-width: 60vw;
-        max-width:80vw;
-      }
-      .dropbtn{
-        width:100%;
-        border: none;
-        outline: none;
-      }
-      .button{
-        width:100px;
-        font-size: 16px;
-        font-weight: bold;
-        margin-right: 0.9px;
-        margin-left: 0.9px;
-        padding: 0px 0px 0px 0px;
-        outline: unset;
-        border: none;
-      }
-      .button span:after{
-        content: '\fe3e';
-        top: 16px;
-        left: 0px;
-        right: 0px;
-        border: none;
-        position: absolute;
-      }
-      .button:focus span{
-        padding-bottom: 25px;
-        padding-right: 0px;
-        
-      }
-      .button:hover span {
-        padding-bottom:25px;
-        padding-right: 0px;
-        outline: none;
-        border: none;
-      }
-      
-      .button:hover span:after {
-        opacity: 1;
-        right: 0px;
-        left: 0px;
-        outline: none;
-        border: none;
-      }
-      #b1{
-        margin-left: 0px;
-        outline: unset;
-      }
-      #b3{
-        margin-right: 0px;
-        border: none;
-        outline: unset;
-      }
-      #b2{
-        outline: unset;
-      }
-      #details1{
-        display: none;
-      }
-      p{
-        text-align:justify;
-      }
-      .whyrecruit p{
-        text-align: unset;
-      }
-      hr{
-        display: none;
-      }
-      #academics{
-        font-size:32px ;
-      }
-      .centered {
-        font-size: 3rem;
-        padding-top: 5%;
-      }
+
+@media screen and (max-width:350px)
+{
+    .section1
+    {
+        margin: 0px;
+        padding: 0px;
+        margin-top: 90px;
+        display: block;
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .whyrecurit
+    {
+        margin: 0px;
+        padding: 0px;
+        max-width: 100%;
+        height: fit-content;
+    }
+    .design_centric
+    {
+        max-height: fit-content;
+        width: auto;
+        margin-top: 600px;
+    }
+    .programs
+    {
+        grid-template-columns: auto;
+        height: 100%;
+    }
+    .section3
+    {
+        height: 100%;
+    }
+    .top
+    {
+        font-size: 25px;
+        line-height: 20px;
+    }
+    .academic
+    {
+        font-size: 25px;
+        line-height: 10px;
+    }
+    #slideshow2
+    {
+        margin:0px;
+    }
+    .dropbtn
+    {
+        min-width: 290px;
+    }
+
 }
+
+
