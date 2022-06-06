@@ -1,137 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/statistics.css">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/statistics.css" />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
     <script src="/scripts/statistics.js"></script>
     <title>Placement Statistics</title>
-</head>
-<body >
+  </head>
+  <body>
     <%- include('templates/header-1.ejs') -%>
-    <div class="stats-container">
-        <div class="stats-container-item" id="stats-heading">
-            <h1 class="stats-container-item-head"><b>Placement Statistics</b></h1>
-        </div>
-        
-        <div class="stats-container-item">
-            <h1>Year 2021-22</h1>
-            <!--<div id="chart1920"></div>-->
-            <table style="width: 50%" border="1">
-                    <tbody>
-                    <tr>
-                        <th> <b>&nbsp;&nbsp;&nbsp;&nbsp; S.No</th>   <th> <b> &nbsp;&nbsp;&nbsp;&nbsp;Details </th> <th> <b> &nbsp;&nbsp;&nbsp;&nbsp; Statistics </th>
 
-                    </tr>
-                    <tr>
-                        <td>  <p class="paragraph"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.   </td> <td> &nbsp;&nbsp;&nbsp;&nbsp;No. of students registered for the Placements   </td> <td> &nbsp;&nbsp;&nbsp;&nbsp; 286 </td> </p>
-                    </tr>
-                    <tr>
-                        <td>  <p class="paragraph"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.   </td> <td> &nbsp;&nbsp;&nbsp;&nbsp;No. of students placed   </td> <td> &nbsp;&nbsp;&nbsp;&nbsp; 213 </td> </p>
-                    </tr>
-                    <tr>
-                        <td>  <p class="paragraph"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.   </td> <td>&nbsp;&nbsp;&nbsp;&nbsp;No. of offers received   </td> <td> &nbsp;&nbsp;&nbsp;&nbsp; 279 </td> </p>
-                    </tr>
-                    <tr>
-                        <td>  <p class="paragraph"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.   </td> <td>&nbsp;&nbsp;&nbsp; Percentage of offers   </td> <td> &nbsp;&nbsp;&nbsp;&nbsp; 97.55% </td> </p>
-                    </tr>
+    <div class="container"></div>
 
-            </table>
-            <a href="https://www.iiitdm.ac.in/img/placements/Placement_Statistics_2021-2022.pdf" target="blank">Download Detailed Statistics (2021-2022)</a>
-        </div>
-
-
-        <div class="stats-container-item">
-            <h1>Year 2020-21</h1>
-            <!--<div id="chart1920"></div>-->
-            <table style="width: 50%" border="1">
-                    <tbody>
-                    <tr>
-                        <th> <b>&nbsp;&nbsp;&nbsp;&nbsp; S.No</th>   <th> <b> &nbsp;&nbsp;&nbsp;&nbsp;Details </th> <th> <b> &nbsp;&nbsp;&nbsp;&nbsp; Statistics </th>
-
-                    </tr>
-                    <tr>
-                        <td>  <p class="paragraph"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.   </td> <td> &nbsp;&nbsp;&nbsp;&nbsp;No. of students registered for the Placements   </td> <td> &nbsp;&nbsp;&nbsp;&nbsp; 236 </td> </p>
-                    </tr>
-                    <tr>
-                        <td>  <p class="paragraph"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.   </td> <td> &nbsp;&nbsp;&nbsp;&nbsp;No. of students participated for the Placements   </td> <td> &nbsp;&nbsp;&nbsp;&nbsp; 200 </td> </p>
-                    </tr>
-                    <tr>
-                        <td>  <p class="paragraph"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.   </td> <td>&nbsp;&nbsp;&nbsp;&nbsp;No. of offers received   </td> <td> &nbsp;&nbsp;&nbsp;&nbsp; 176 </td> </p>
-                    </tr>
-                    <tr>
-                        <td>  <p class="paragraph"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.   </td> <td>&nbsp;&nbsp;&nbsp;&nbsp; Percentage of offers   </td> <td> &nbsp;&nbsp;&nbsp;&nbsp; 88% </td> </p>
-                    </tr>
-
-            </table>
-        </div>
-
-
-        <div class="stats-container-item">
-            <h1>Year 2019-20</h1>
-            <table style="width: 50%" border="1">
-                    <tbody>
-                    <tr>
-                        <th> <b>&nbsp;&nbsp;&nbsp;&nbsp; S.No</th>   <th> <b> &nbsp;&nbsp;&nbsp;&nbsp;Details </th> <th> <b> &nbsp;&nbsp;&nbsp;&nbsp; Statistics </th>
-
-                    </tr>
-                    <tr>
-                        <td>  <p class="paragraph"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.   </td> <td> &nbsp;&nbsp;&nbsp;&nbsp;No. of students registered for the Placements   </td> <td> &nbsp;&nbsp;&nbsp;&nbsp; 273 </td> </p>
-                    </tr>
-                    <tr>
-                        <td>  <p class="paragraph"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.   </td> <td> &nbsp;&nbsp;&nbsp;&nbsp;No. of students participated for the Placements   </td> <td> &nbsp;&nbsp;&nbsp;&nbsp; 246 </td> </p>
-                    </tr>
-                    <tr>
-                        <td>  <p class="paragraph"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.   </td> <td>&nbsp;&nbsp;&nbsp;&nbsp;No. of offers received   </td> <td> &nbsp;&nbsp;&nbsp;&nbsp; 183 </td> </p>
-                    </tr>
-                    <tr>
-                        <td>  <p class="paragraph"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.   </td> <td>&nbsp;&nbsp;&nbsp;&nbsp; Percentage of offers   </td> <td> &nbsp;&nbsp;&nbsp;&nbsp; 74.39% </td> </p>
-                    </tr>
-
-            </table>
-           <!-- <div id="chart1920"></div>-->
-        </div>
-        <div class="stats-container-item">
-            <h1>Year 2018-19</h1>
-            <div id="chart1819"></div>
-            <a href="https://www.iiitdm.ac.in/img/placements/Placement_Statistics_2018-2019.pdf" target="blank">Download Detailed Statistics (2018-2019)</a>
-        </div>
-        <div class="stats-container-item">
-            <h1>Year 2017-18</h1>
-            <div id="chart1718"></div>
-            <a href="https://www.iiitdm.ac.in/img/placements/Placement_Statistics_2017-2018.pdf" target="blank">Download Detailed Statistics (2017-2018)</a>
-        </div>
-        <!-- <div class="stats-container-item">
-            <h1>Year 2016-17</h1>
-            <div id="chart1617"></div>
-            <a href="https://www.iiitdm.ac.in/img/placements/Placement_Statistics_2016-2017.pdf" target="blank">Download Detailed Statistics (2016-2017)</a>
-        </div>
-        <div class="stats-container-item">
-            <h1>Year 2015-16</h1>
-            <div id="chart1516"></div>
-            <a href="https://www.iiitdm.ac.in/img/placements/Placement_Statistics_2015-2016.pdf" target="blank">Download Detailed Statistics (2015-2016)</a>
-        </div> -->
-        <div class="stats-container-item">
-            <a href="/demographic">Student Demography</a>
-        </div>
+    <div class="container container1">
+      <div class="h1 p-4">Statistics</div>
     </div>
-    
+
+    <div class="container container2 mt-5">
+      <div class="row">
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-3">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <div class="outer">
+              <div class="inner">
+                <div class="inner-text text-center">97%</div>
+              </div>
+            </div>
+
+            <div class="card statsCard mt-5">
+              <div class="card-body">
+                <h5 class="card-title text-center h4">2020-2021</h5>
+                <p class="card-text">
+                  Average of Offers (CTC LPA): 8.89 (B Tech) <br>
+                  Average of Offers (CTC LPA): 11.34 (DD) <br>
+                  Average of Offers (CTC LPA): 9.09 (M Tech) <br>
+                </p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-3">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <div class="outer">
+              <div class="inner">
+                <div class="inner-text text-center">86%</div>
+              </div>
+            </div>
+
+            <div class="card statsCard mt-5">
+              <div class="card-body">
+                <h5 class="card-title text-center h4">2019-2020</h5>
+                <p class="card-text">
+                  Average of Offers (CTC LPA): 9.8 (B Tech) <br>
+                  Average of Offers (CTC LPA): 7.3 (DD) <br>
+                  Average of Offers (CTC LPA): 5.5 (M Tech) <br>
+                  
+                </p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-3">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <div class="outer">
+              <div class="inner">
+                <div class="inner-text text-center">78%</div>
+              </div>
+            </div>
+
+            <div class="card statsCard mt-5">
+              <div class="card-body">
+                <h5 class="card-title text-center h4">2018-2019</h5>
+                <p class="card-text">
+                  Average of Offers (CTC LPA): 5.45 (B Tech) <br>
+                  Average of Offers (CTC LPA): 6.52 (DD) <br>
+                  Average of Offers (CTC LPA): 4.12 (M Tech) <br>
+                </p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-3">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <div class="outer">
+              <div class="inner">
+                <div class="inner-text text-center">75%</div>
+              </div>
+            </div>
+
+            <div class="card statsCard mt-5">
+              <div class="card-body">
+                <h5 class="card-title text-center h4">2017-2018</h5>
+                <p class="card-text">
+                  Average of Offers (CTC LPA): 5.16 (B Tech) <br>
+                  Average of Offers (CTC LPA): NA (DD) <br>
+                  Average of Offers (CTC LPA): 4.25 (M Tech) <br>
+                </p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <%- include('templates/footer-1.ejs') -%>
 
-    <script type="text/javascript">
-        
-    </script>
-
-</body>
+    <script type="text/javascript"></script>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
