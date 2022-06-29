@@ -1,7 +1,16 @@
+/* Google fonts Inter regular 400 */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 body {
   background-color: #eee;
   text-align: center;
   overflow-x: hidden;
+  --var--font-weight: 400;
+  --var--font-family: "Inter";
+  --var--font-style: "normal";
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  font-family: "Inter", sans-serif !important;
 }
 
 .carousel-inner img {
@@ -37,14 +46,14 @@ body {
 }
 
 .heading-bg {
-  background-color: #00264d;
+  /* background-color: #00264d; */
   padding: 0.5%;
   color: white;
 }
 .heading-bg > h1 {
   text-align: center;
   font-size: 2rem;
-  font-family: rubik;
+  /* font-family: rubik; */
   font-weight: bold;
 }
 @media only screen and (min-width: 150px) and (max-width: 780px) {
