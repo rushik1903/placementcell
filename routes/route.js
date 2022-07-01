@@ -63,6 +63,10 @@ route.get('/notFound',(req,res)=>{
     res.render('notFound')
 })
 
+// route for faq
+route.get('/faq', (req, res) => {
+    res.render('faq');
+});
 
 
 module.exports = route;
