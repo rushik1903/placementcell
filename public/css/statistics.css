@@ -17,16 +17,16 @@ body {
 }
 
 .outer-1 {
-  background: conic-gradient(white 3%,lightblue, rgba(0,0,255,1) 50%);
+  background: conic-gradient(white 3%, #00FFE0 47%, #0500FF 80%);
 
 }
 
 .outer-2 {
-  background: conic-gradient(white 12%,lightblue, rgba(0,0,255,1) 50%);
+  background: conic-gradient(white  12%,#00FFE0  47%, #0500FF  80%);
 }
 
 .outer-3 {
-  background: conic-gradient(white 26%,lightblue, rgba(0,0,255,1) 50%);
+  background: conic-gradient(white  26%, #00FFE0  47%,#0500FF  80%);
 }
 
 .inner {
