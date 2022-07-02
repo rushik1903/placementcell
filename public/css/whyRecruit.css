@@ -214,13 +214,12 @@ body {
   font-size: 1.2rem !important;
   /* border-color: #fff !important; */
   cursor: default !important;
+  padding: 10px 16px !important;
 }
 #btn-1,
 #btn-2,
 #btn-3 {
   border-radius: 10px;
-  width: 182px;
-  height: 39px;
 }
 .branch {
   padding: 15px 100px 15px 100px;
