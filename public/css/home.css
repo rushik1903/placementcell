@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 *, *:before, *:after{
     padding: 0;
@@ -8,19 +10,35 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: 'Inter', sans-serif;
 }
 
 /* About section */
 
+#home{
+    background: url(../img/home_campusview.jpg) no-repeat center;
+    background-size:cover;
+}
+
+#home::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
 .about_info{
     margin: 20px;
     margin-right: 0;
-    background-color: var(--custom-extra-light);
+    background: linear-gradient(180deg,
+    rgba(8, 0, 56, 0.4) 0%,
+    rgba(131, 131, 131, 0.08) 100%);
     border-radius: 4vh;
     padding: 10px;
 }
 
+
+/* 
 .about_imgContainer{
     margin: 20px;
 }
@@ -29,23 +47,30 @@ body{
     width: 100%;
     border-radius: .5rem;
     margin-top: 50px;
-}
+} */
 
 .about_head{
-    text-align: center;
-    font-size: 40px;
+    font-size: 30px;
+    margin-left: 25px;
     font-weight: 400;
+    text-decoration: underline;
+    color:white; 
 }
 
 .main_about_body{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5rem;
+    margin-left: 25px;
+    color: white;
     padding: 10px 0;
     text-align: justify;
+    font-weight: 400;
+    font-family: "Inter";
+    font-style: "normal";
 } 
 
 /* Director Part */
-.Director_img
+/* .Director_img
 {
     width: 85%;
     border-radius: .5rem;
@@ -55,14 +80,46 @@ body{
 .Director_imgContainer{
     margin: 30px;
     margin-top: 0;
+} */
+
+.director-wrapper{
+    margin: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    border-radius: 10px;
+}
+.dir_msg{
+    width: 100%;
+    height: fit-content;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    padding: 10px;
+}
+.dir_container{
+    padding: 20px;
+    padding-bottom: 30px; 
+    border-color: #000000;
+}
+.img_container img {
+    max-width: 440px;
+    height: auto;
+    border-radius: 5px;
 }
 
 /* Statictics and Notifications */
+
+#sandn{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/wall.jpeg) no-repeat center ;
+    background-size: cover;
+    opacity: 1.5;
+}
 .statictics_head a:link,
 .statictics_head a:visited
 {
     color: white;
-    text-decoration: none;
 }
 .statictics_head a:active
 {
@@ -71,14 +128,20 @@ body{
 
 .statictics_head,.noticification_head
 {
-    text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 400;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.noticification_head{
+    margin-top: 40px;
+    margin-left: 25px;
 }
 
 .statictics_head
 {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 
@@ -86,10 +149,12 @@ body{
 {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     padding: 1rem;
     margin: 3em 0;
     justify-content: space-around;
-    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .home_notification_body_content::-webkit-scrollbar {
@@ -102,33 +167,33 @@ body{
     /* border: 2px solid black; */
     line-height: 1.8rem;
     padding: 1rem;
-    text-align: center;
-    background: var(--custom-light);
+    /* background: var(--custom-light); */
     margin: 7px;
 }
 
 .home_notification_body
 {
     color: white;
-    height: 20rem;
+    height: 30rem;
     font-size: 20px;
     line-height: 2.5em;
     /* margin: 1rem;
     padding: 2rem; */
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%;
-    background-color: var(--custom-dark);
+    /* background-color: var(--custom-dark); */
 }
 
 .home_notification_body_content
 {
     scrollbar-width: none;
     overflow-y: scroll;
-    height: 14rem;
+    height: 24rem;
 }
 
 /* Recruitors Part */
-.wrapper{
+/* .wrapper{
     max-width: 75rem;
     padding: 2rem;
     margin: 0 auto;
@@ -214,7 +279,7 @@ gallery_link:hover .gallery_image{
     filter: blur(2px);
 }
 
-/* Media queries */
+/* Media queries 
 
 @media only screen and (min-width : 150px) and (max-width : 320px) {
     .about_head{
@@ -250,5 +315,38 @@ gallery_link:hover .gallery_image{
     .gallery_overlay{
         font-size: 1rem;
     }
-}
+} */
+/* 
+#Recruitors{
+    background: url(../img/macc-logo-collage.png) no-repeat center;
+    background-size:cover;
+    height: 1000px;
+} */
 
+/* /Recruiters/ */
+.recruiters-wrapper{
+    margin: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    border-radius: 10px;
+}
+.recruiters_logo{
+    width: 100%;
+    height: fit-content;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    padding: 10px;
+}
+.logo_container{
+    width: 50%;
+    padding: 20px;
+    padding-bottom: 30px; 
+    border-color: #000000;
+}
+.logo_img_container{
+	display: grid;
+	place-items: center;
+}

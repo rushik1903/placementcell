@@ -13,28 +13,22 @@
 <body>
     <%- include('templates/header-1.ejs') -%>
 
-    <div class="container-fluid">
-        <div class="row" style="margin: 0;">
+    <div class="container-fluid" id="home" style="overflow:auto;">
+        <div class="row" style=" margin: 0; width: 50%; float:right;">
             <div class="col-xl">
                 <div class="about_info">
-                    <div class="about_head">About IIITDM Kancheepuram</div>
+                    <div class="about_head" style="opacity: 1;">About IIITDM Kancheepuram</div>
                 <div class="main_about_body">
                     <p>Indian Institute of Information Technology Design and Manufacturing (IIITDM) Kancheepuram is an Institute of National Importance, established by the MHRD, Government of India in 2007 with the mandate of specializing in design and manufacturing oriented engineering education and research. Human resource development reforms of the past have helped India to attain global recognition in knowledge and IT enabled services. A strong foothold in the design market will propel the nation's growth and IIITDMs are a result of the Government of India's vision to produce next generation engineers equipped with design and manufacturing skills.</p>
                     <p>The institute provides the ambience where creativity and new ideas flourish, producing leaders of tomorrow by imparting learning blended with excellence. The dynamic and constantly evolving academic program reflects the institute's commitment to stay abreast with pushing the frontiers of knowledge worldwide. Extracurricular activities enjoy equal importance towards overall development of students, making them fit for the challenges of the corporate world.</p>
                 </div>
                 </div>
             </div>
-            <div class="col-xl">
-                <div class="about_imgContainer">
-                    <img class="about_img"
-                    src="http://www.iiitdm.ac.in/img/Infrastructure/map.jpg" alt="">
-                </div>
-            </div>
         </div>
     </div>
 
     <!-- Directors Message -->
-    <div class="container-fluid">
+    <!-- <div class="container-fluid" style="clear:right;">
         <div class="row">
             <div class="col-xl ">
                 <div class="Director_imgContainer">
@@ -54,35 +48,81 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+    <div class="director-wrapper">
+        <section class="dir_msg">
+          <div class="dir_container">
+            <div style="color: black">
+              <h6><u style="font-weight: 350;
+                font-family:Inter;
+                font-style: normal; text-decoration: underline; font-size: 30px;">Director's Message</u></h6>
+            </div>
+            <br>
+            <div class="contents dcc" style="color: black; font-weight: 400;
+            font-family: Inter;
+            font-style: normal; font-size: 18px; ">
+              <p>
+                Indian Institute of Information Technology, Design and Manufacturing 
+                (IIITDM) Kancheepuram is an Institute of National Importance, established by the 
+                Ministry of Education (earlier MHRD), Government of India in 2007 with
+                the mandate of specializing in design and manufacturing oriented 
+                engineering education and research. Human Resource development reforms
+                of the past have helped India to attain global recognition in knowledge
+                and IT enabled services. A strong foothold in the design market will 
+                propel the nation's growth and IIITDMs are a result of the Government
+                of India's vision to produce next generation engineers equipped with
+                design and manufacturing skills.
+                <br><br>
+                The Institute provides the ambience where creativity and new ideas flourish, 
+                producing leaders of tomorrow by imparting learning blended with excellence.
+                The dynamic and constantly evolving academic program reflects the institute's 
+                commitment to stay abreast with pushing the frontiers of knowledge worldwide.
+                Extracurricular activities enjoy equal importance towards overall development
+                of students, making them fit for the challenges of the corporate world.
+              </p>
+              <br>
+              <br>
+              <h6 style="text-align: right; font-weight: 750;">-Prof. D V L N Somayajulu</h6>
+            </div>
+          </div>
+          <div class="img_container">
+            <img src="http://www.iiitdm.ac.in/img/bog/Prof_DVLN_Somayajulu.png" alt="">
+          </div>
+        </section>
+      </div>
 
 
     <!-- Statictics and notifications -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="sandn">
         <div class="row" style="margin: 0;">
-            <div class="col-xl" style="background-color: rgba(0, 23, 85, 0.5);
-            backdrop-filter: blur(5px);
-            color: white;">
+            <div class="col-xl-3" style="background: linear-gradient(180deg,
+            rgba(8, 0, 56, 0.2) 0%,
+            rgba(131, 131, 131, 0.08) 100%);
+            color: white; margin: 30px 10px 30px 70px; border-radius: 4vh;">
         <div style="height: 14rem; margin:0%;">
             <div class="statictics_head"><a href="/statistics">Statistics</a></div>
             <div class="main_statictics_body">
                 <div class="main_statictics_body_numbers">
-                    <h1>176</h1>
-                    <p>Total Offers</p>
+                    <!-- <p><bold style="font-size:2.5rem;">42</bold> LPA</p> -->
+                    <h1 style="margin-bottom: 0;">42LPA</h1>
+                    <p style="margin-top: 0;">Highest Package</p>
                 </div>
                 <div class="main_statictics_body_numbers">
-                    <h1>102+</h1>
-                    <p>Companies visited</p>
+                    <h1 style="margin-bottom: 0;">176</h1>
+                    <p style="margin-top: 0;">Total Offers</p>
                 </div>
                 <div class="main_statictics_body_numbers">
-                    <p><bold style="font-size:2.5rem;">42</bold> LPA</p>
-                    <p>Highest Package</p>
+                    <h1 style="margin-bottom: 0;">102+</h1>
+                    <p style="margin-top: 0;">Companies visited</p>
                 </div>
             </div>
         </div>
             </div>
-            <div class="col-xl">
-                    <div class="home_notification_body">
+            <div class="col-xl-7">
+                    <div class="home_notification_body" style="background: linear-gradient(180deg,
+                    rgba(8, 0, 56, 0.2) 0%,
+                    rgba(131, 131, 131, 0.08) 100%); margin: 30px 30px; border-radius: 4vh;">
                         <div class="noticification_head">Notification</div>
                         <div class="home_notification_body_content">
                             <div class="home_notification_content">G. Himaja (COE16B017) and G.Meghana (COE16B041) got an offer from Adobe (package: 42 Lakhs)</div>
@@ -102,8 +142,8 @@
     </div>
 
     <!-- Recruitors part -->
-    <section>
-        <div class="wrapper">
+    <!-- <section id="Recruitors">
+         <div class="wrapper">
             <div class="about_head">
                 Our Past Recruitors
             </div>
@@ -210,8 +250,19 @@
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </div> 
+    </section> -->
+
+    <div class="recruiters-wrapper">
+        <section class="recruiters_logo">
+            <div class="logo_container" style="margin-left: 250px;">
+                <div style="color: black;">
+                    <h6><u style="text-decoration: underline;  font-size: 25px;">Few of our Past Recruiters</u></h6>
+                </div>
+                <img src="img/macc-logo-collage.png" alt="Past Recruiters">
+            </div>
+        </section>
+    </div>
 
 
     <%- include('templates/footer-1.ejs') -%>
