@@ -40,8 +40,9 @@ body {
 /* Overlay on carousel */
 .overlay {
   position: absolute;
-  top: 20%;
-  left: 5%;
+  /* top: 20%; */
+  left: 35%;
+  margin-top: 10px;
   z-index: 1;
 }
 

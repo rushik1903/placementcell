@@ -1,273 +1,215 @@
-.top-head
-{
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
   width: 100%;
-  height: 110px;
-  margin-top: 20px;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
 }
 
-.text
-{
+.main {
+  width: 100%;
+  padding: 40px;
+  padding-right: 80px;
+}
+
+.header {
   position: absolute;
-  max-width: 860px;
-  height: 60px;
-  left: 50px;
-  top: 130px;
-  background: #C4C4C4;
+  padding: 60px;
 }
 
-.text h1 
-{
-   font-family: 'Inter';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 40px;
-   line-height: 48px;
-   color: #000000;
-}
-
-.procedure-part
-{
-
-  margin-top: 20px;
-
-}
-
-.procedure-part1
-{
-  display: grid;
-  padding: 5px;
-  grid-template-columns: 420px 230px 250px 250px 250px;
-  
-  height: 400px;
-}
-
-.item
-{
-  position: relative;
-  z-index: 90;
-  max-height: max-content;
-  opacity: 0.8;
-}
-
-.item-inner {
-  position: relative;
-  border: 1px solid #dedede;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-  background: #7A7A7A;
-  opacity: 1;
-  color: white;
-  word-break: keep-all;
-}
-
-.item-inner:hover {
-  border-color: blue;
-
-}
-
-.item:hover {
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
-  -webkit-user-select: none;
-}
-
-.mobile-step
-{
-  display: none;
-}
-
-.item-top
-{
-  font-family: 'Inter';
+.placement-heading {
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 48px;
-  display: flex;
-  align-items: center;
+  font-size: 26px;
+  line-height: 31px;
+  text-decoration-line: underline;
+
   color: #000000;
-  padding-left: 20px;
-  cursor: pointer;
+}
+
+.steps {
+  height: 100%;
+  width: 100%;
+  padding-top: 150px;
+  padding-left: 50px;
+  display: flex;
   justify-content: space-between;
 }
 
+.step {
+  width: 500px;
+  height: fit-content;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
 
-.item-content
-{
-  font-family: 'Inter';
+.step-top {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.step-no {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+  box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.step-no-inner {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #747474;
+}
+
+.mobile-view {
+  display: none;
+}
+
+.step-heading {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  color: #747474;
+  padding-left: 55px;
+}
+
+.step-body {
+  padding: 20px 20px 20px 50px;
+}
+
+.step-body-inner {
+  word-break: keep-all;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  color: #FFFFFF;
-}
-
-#step2
-{
-  word-spacing: 15px;
-}
-#step2 .item-content-body
-{
-  height: 62px;
-}
-
-#step3
-{
-  word-spacing: 15px;
-}
-#step3 .item-content-body
-{
-  height: 38px;
-}
-
-
-#step4 .item-content-body
-{
-  height: 158px;
-}
-
-#step5 .item-content-body
-{
-  height: 205px;
-}
-
-.procedure-part2
-{
-  padding: 10px 50px;
-}
-
-.steps-sequence
-{
-   
-   padding-left: 100px;
-   height: 120px;
-   width: 100%;
-   display: flex;
-   justify-content: space-evenly;
-   align-items: baseline;
-   cursor: pointer;
-}
-
-.sequence-step::after
-{
-  content: '-----';
-  padding-left: 10px;
-  width: max-content;
-  position: absolute;
-  transform: translate(65px, 19px);
-  font-size: 30px;
-  font-weight: 300;
-  cursor: pointer;
-}
-
-.sequence-step
-{
-  margin-top: 10px;
-  width: 82px;
-  height: 82px;
-  cursor: pointer;
-  display: flex;
-  justify-content:center;
-
-}
-
-.circle
-{
-  
-  border-radius: 50%;
-  text-align: center; 
-  position: relative;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  background: #C4C4C4;
-  border: 1px solid #999;
-}
-
-.circle:hover
-{
-  border-color: blue;
-}
-
-.circle-content
-{
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
   display: flex;
   align-items: center;
-  text-align: center;
-  color: #000000;  
+  text-align: justify;
+
+  color: #000000;
 }
 
-
-#sequence-8::after
-{
-  content: " ";
+#step2 {
+  margin-top: 230px;
 }
 
-.procedure-part3-inner
-{
-  padding: 20px;
-  margin: 5px 80px;
-  display: grid;
-  grid-template-columns: 350px 350px 500px;
+#step3 {
+  margin-top: 110px;
 }
 
-
-.item-hover
-{
-  border: 1.5px solid blue;
+#step4 {
+  margin-top: 260px;
 }
 
-.btn-hover
-{
-  border-color: blue;
-  background-color: teal;
+#step5 {
+  margin-top: 210px;
 }
 
-@media screen and (max-width:1000px){
-  .procedure-part1
-  {
-    grid-template-columns: auto;
-    height: 100%;
-    grid-row-gap: 10px;
+#step6 {
+  margin-top: 170px;
+}
+
+#step7 {
+  margin-top: 220px;
+}
+
+#step8 {
+  margin-top: 200px;
+}
+
+#link {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
     margin: 0px;
     padding: 0px;
+    width: 100%;
+    padding-right: 10px;
   }
-
-  .item-content-body
-  {
-    height: 0px;
+  .mobile-view {
+    display: block;
   }
-  .procedure-part2
-  {
+  .laptop-view {
     display: none;
   }
-  .procedure-part3-inner
-  {
-    grid-template-columns: auto;
-    grid-row-gap: 10px;
+  .step {
+    width: 100%;
     margin: 0px;
     padding: 0px;
-    margin-top: 10px;
   }
-  .mobile-step
-  {
-     display: inline;
+  .steps {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    padding-top: 100px;
+    padding-left: 10px;
   }
-  .text
-  {
-    left: 0px;
-    font-size: 20px;
-    height: 100px;
-    background-color: white;
-    margin-bottom: 20px;
+  #step2 {
+    margin-top: 40px;
   }
+  #step3 {
+    margin-top: 40px;
+  }
+  #step4 {
+    margin-top: 40px;
+  }
+  #step5 {
+    margin-top: 40px;
+  }
+  #step6 {
+    margin-top: 40px;
+  }
+  #step7 {
+    margin-top: 40px;
+  }
+  #step8 {
+    margin-top: 40px;
+  }
+  .step-body-inner {
+    word-break: keep-all;
+  }
+}
 
+@media screen and (max-width: 1000px) {
+  .step {
+    width: 100%;
+  }
+  .main {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    padding-right: 10px;
+  }
 }
