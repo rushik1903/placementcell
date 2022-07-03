@@ -37,9 +37,7 @@ route.post("/login", (req, res) => {
 route.get("/facilities", (req, res) => {
   res.render("facilities");
 });
-route.get("/faq", (req, res) => {
-  res.render("faq");
-});
+
 route.get("/demographic", (req, res) => {
   res.render("demographic");
 });
