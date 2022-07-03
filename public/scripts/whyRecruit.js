@@ -14,7 +14,7 @@ for (let i = 0; i < branch_dropdown.length; i++) {
     branch_dropdown[i].addEventListener("click", function () {
         // console.log("Clicked");
         // Add border to the selected dropdown and change color to blue and underline
-        this.classList.toggle("active");
+        this.classList.toggle("active-1");
         let dropdownContent = this.nextElementSibling;
         if (dropdownContent.style.display === "grid") {
             dropdownContent.style.display = "none";
