@@ -4,28 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/facilities.css">
+    <link rel="stylesheet" href="css/facilities.css">
     <title>Facilities</title>
 </head>
 
 <body>
     <%- include('templates/header-1.ejs') -%>
-    <div class="topImage">
-        <span class="topImageTitle"><b>Facilities</b></span>
-    </div>
-    <div class="custom-container">
-        <div class="custom-container-section">
-            <div class="section-description">
+        <div class="topImage">
+            <span class="topImageTitle">Facilities</span>
+        </div>
+        <div class="custom-container">
+            <div class="custom-container-section">
+                <div class="section-description">
                     The placement office is well equipped and is designed to efficiently facilitate and support the each
                     stages of recruiment procedure.
-                    All the necessary arrangements for interviews, group discussions and pre placement talks will be carried
-                    out by the staff at the placement office. Some of the well equipped facilities that we have to aid the
+                    All the necessary arrangements for interviews, group discussions and pre placement talks will be
+                    carried
+                    out by the staff at the placement office. Some of the well equipped facilities that we have to aid
+                    the
                     process are as follows:
+                </div>
             </div>
-        </div>
-        <div class="custom-container-section">
+            <div class="grid-container">
+                <div class="grid-child purple">
+                    <div class="prog">
+                        <button class="btn btn-primary my-btn " id="btn-1">Smart class-rooms</button>
+                        <button class="btn btn-primary my-btn" id="btn-2">Interview rooms and Group discussions
+                            halls</button>
+                        <button class="btn btn-primary my-btn" id="btn-3">Computer labs</button>
+                        <button class="btn btn-primary my-btn" id="btn-4">Student placement volunteers</button>
+                        <button class="btn btn-primary my-btn" id="btn-5">Video conferencing facilities</button>
+                    </div>
+                </div>
+                <div class="grid-child green" style="padding-top: 25px;">
+                    <div class="custom-container-section">
+                        <div class="section-box" id="box-1" style="display: none;">
+                            <div>
+                                <img class="section-box-item section-custom-img"
+                                    src="https://drive.google.com/thumbnail?id=1GQb9-qhbsJtMIHy67HFhFZnoyrOztAvu"
+                                    alt="office">
+                            </div>
+                            <div class="section-box-item section-custom-para">
+                                <h1>Smart class-rooms</h1>
+                                <p>Our smart lecture halls come with the best technology and provide a conducive
+                                    atmosphere
+                                    for
+                                    dynamic and focused discussions between the speakers and the audience.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-container-section">
+                        <div class="section-box" id="box-2" style="display: none;">
+                            <div class="section-box-item section-custom-para">
+                                <h1>Interview rooms and Group discussions halls</h1>
+                                <p>A very minimalistic yet expansive looking space for conducting interviews, group
+                                    discussions,
+                                    pre-placement talks etc.
+                                </p>
+                            </div>
+                            <img class="section-box-item section-custom-img"
+                                src="https://drive.google.com/thumbnail?id=1fHFQJdTKe9BqJBvRVioHwn9j24sJUWoS" alt="room"
+                                srcset="">
+                        </div>
+                    </div>
+
+                    <div class="custom-container-section">
+                        <div class="section-box " id="box-3" style="display: none;">
+                            <img class="section-box-item section-custom-img" src="/img/facilities/computer_lab.jpg"
+                                alt="office">
+                            <div class="section-box-item section-custom-para">
+                                <h1>Computer labs</h1>
+                                <p>The college has high-tech all-in-one computer systems enabled with extremely fast
+                                    internet access
+                                    through LAN and WiFi (>100 Mbps). These systems are equipped with the cutting edge
+                                    hardware
+                                    configurations and are connected to a central server.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="custom-container-section">
+                        <div class="section-box" id="box-4" style="display: none;">
+                            <div class="section-box-item section-custom-para">
+                                <h1>Student placement volunteers</h1>
+                                <p>Student placement volunteers to assist on the day of visit and through the selection
+                                    process</p>
+                            </div>
+                            <img class="section-box-item section-custom-img"
+                                src="https://drive.google.com/thumbnail?id=1jkGgHeE3iCT3Qt6UnHkglteIg-SxdrRg"
+                                alt="volunteers" srcset="">
+                        </div>
+                    </div>
+
+                    <div class="custom-container-section">
+                        <div class="section-box" id="box-5" style="display: none;">
+                            <img class="section-box-item section-custom-img"
+                                src="https://drive.google.com/thumbnail?id=18-xphkMSE6ARRNJR5k91wAjLt01xTN9l"
+                                alt="office">
+                            <div class="section-box-item section-custom-para">
+                                <h1>Video conferencing facilities</h1>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="scripts/facilities.js"></script>
+
+                <!-- <div class="custom-container-section">
             <div class="section-box">
                 <img class="section-box-item section-custom-img" src="https://drive.google.com/thumbnail?id=1GQb9-qhbsJtMIHy67HFhFZnoyrOztAvu" alt="office">
                 <div class="section-box-item section-custom-para">
@@ -34,8 +125,9 @@
                         dynamic and focused discussions between the speakers and the audience.</p>
                 </div>
             </div>
-        </div>
-        <div class="custom-container-section">
+        </div> -->
+
+                <!-- <div class="custom-container-section">
             <div class="section-box">
                 <div class="section-box-item section-custom-para">
                     <h1>Interview rooms and Group discussions halls</h1>
@@ -45,20 +137,24 @@
                 </div>
                 <img class="section-box-item section-custom-img" src="https://drive.google.com/thumbnail?id=1fHFQJdTKe9BqJBvRVioHwn9j24sJUWoS" alt="room" srcset="">
             </div>
-        </div>
-        <div class="custom-container-section">
+        </div> -->
+
+
+                <!-- <div class="custom-container-section">
             <div class="section-box">
                 <img class="section-box-item section-custom-img" src="/img/facilities/computer_lab.jpg" alt="office">
                 <div class="section-box-item section-custom-para">
-                    <h1>Computer labs </h1>
+                    <h1>Computer labs</h1>
                     <p>The college has high-tech all-in-one computer systems enabled with extremely fast internet access
                         through LAN and WiFi (>100 Mbps). These systems are equipped with the cutting edge hardware
                         configurations and are connected to a central server.
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="custom-container-section">
+        </div> -->
+
+
+                <!-- <div class="custom-container-section">
             <div class="section-box">
                 <div class="section-box-item section-custom-para">
                     <h1>Student placement volunteers</h1>
@@ -67,6 +163,8 @@
                 <img class="section-box-item section-custom-img" src="https://drive.google.com/thumbnail?id=1jkGgHeE3iCT3Qt6UnHkglteIg-SxdrRg" alt="volunteers" srcset="">
             </div>
         </div>
+
+
         <div class="custom-container-section">
             <div class="section-box">
                 <img class="section-box-item section-custom-img" src="https://drive.google.com/thumbnail?id=18-xphkMSE6ARRNJR5k91wAjLt01xTN9l" alt="office">
@@ -76,8 +174,11 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- <div class="container">
+    </div> -->
+
+
+
+                <!-- <div class="container">
         <div class="descriptionTop">
             <div data-aos="fade-up">
                 The placement office is well equipped and is designed to efficiently facilitate and support the each
@@ -85,7 +186,6 @@
                 All the necessary arrangements for interviews, group discussions and pre placement talks will be carried
                 out by the staff at the placement office. Some of the well equipped facilities that we have to aid the
                 process are as follows:
-
             </div>
         </div>
          <div class="row1">
@@ -140,14 +240,9 @@
                 </div>
             </div>
         </div>
-
     </div> -->
 
-    <%- include('templates/footer-1.ejs') -%>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+                <%- include('templates/footer-1.ejs') -%>
 </body>
 
 </html>
