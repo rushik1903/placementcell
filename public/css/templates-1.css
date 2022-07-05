@@ -64,19 +64,19 @@ body{
 .top-navbar-menu-btn{
     display: none;
     outline: none!important;
-   border: none;
+    border: none;
     margin: 2vw;
     margin-right: 2rem;
     margin-left: auto;
     background-color:black;
-    color:yellow; 
+    color:white; 
     transition: .5s;
 }
 .top-navbar-menu-btn:hover{
-    color: yellow;
+    color:white;
 }
 .top-navbar-menu-btn:active{
-    color: yellow;
+    color: white;
 }
 .top-navbar-item-link,
 .top-navbar-item-link-dd-title{
@@ -223,7 +223,7 @@ abbr{
     background-color: black;
 }
 .dd-s-content-link-dd:hover .dd-s-content-link-dd-title{
-    color: blue;
+    color:white;
     cursor: pointer;
 }
 .dd-s-content-link-dd-content a{
@@ -234,7 +234,7 @@ abbr{
     padding-top: .2rem;
 }
 .dd-s-content a:active{
-    color: blue;
+    color: white;
 }
 /* ================== Footer ==================== */
 footer{    
