@@ -350,7 +350,7 @@ footer{
     position: absolute;
     left: 40%;
     top: 68%;
-    font: 'Inter';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
