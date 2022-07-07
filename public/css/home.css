@@ -192,23 +192,33 @@ body {
   width: 50%;
   float: right;
 }
+.stats_external {
+  height: 14rem;
+  margin: 0%;
+}
 @media only screen and (max-width: 768px) {
-  .dir_msg{
+  .dir_msg {
     flex-direction: column;
     align-items: center;
   }
-  .img_container img{
+  .img_container img {
     max-width: 90%;
   }
-  .main_statictics_body{
-    flex-direction: row;
+  .stats_external{
+    height: auto;
+    margin: auto;
   }
-  img{
+  .main_statictics_body {
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  img {
     max-width: 100%;
   }
-  .logo_container{
+  .logo_container {
     margin-left: 0 !important;
-    width: 100% !important;
+    width: 100% !important ;
   }
 }
 /* Recruitors Part */
