@@ -53,7 +53,7 @@ body {
 } */
 
 .about_head {
-  font-size: 30px;
+  font-size: 1.9rem;
   margin-left: 25px;
   font-weight: 400;
   /*text-decoration: underline;*/
@@ -61,7 +61,7 @@ body {
 }
 
 .main_about_body {
-  font-size: 18px;
+  font-size: 1.1rem;
   line-height: 1.5rem;
   margin-left: 25px;
   color: white;
@@ -130,7 +130,7 @@ body {
 
 .statictics_head,
 .noticification_head {
-  font-size: 30px;
+  font-size: 1.9rem;
   font-weight: 400;
   /*text-decoration: underline;*/
   margin-left: 10px;
@@ -172,7 +172,7 @@ body {
 .home_notification_body {
   color: white;
   height: 30rem;
-  font-size: 20px;
+  font-size: 1.2rem;
   line-height: 2.5em;
   /* margin: 1rem;
     padding: 2rem; */
@@ -197,6 +197,9 @@ body {
   margin: 0%;
 }
 @media only screen and (max-width: 768px) {
+  html{
+    font-size: 10px
+  }
   .dir_msg {
     flex-direction: column;
     align-items: center;
