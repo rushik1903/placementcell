@@ -14,7 +14,7 @@
     <%- include('templates/header-1.ejs') -%>
 
     <div class="container-fluid" id="home" style="overflow:auto;">
-        <div class="row" style=" margin: 0; width: 50%; float:right;">
+        <div class="row my-row" style=" " id="about_row">
             <div class="col-xl">
                 <div class="about_info">
                     <div class="about_head" style="opacity: 1;">About IIITDM Kancheepuram</div>
@@ -270,4 +270,15 @@
     <%- include('templates/footer-1.ejs') -%>
 </body>
 <!-- <script src="/scripts/home.js"></script> -->
+<script>
+    function MediaQuery(x) {
+        if (x.matches) {
+            document.getElementsByClassName('my-row')[0].classList.remove('my-row');
+            console.log("Media query js working");
+        } 
+    }
+    var x= window.matchMedia("(max-width: 768px)");
+    MediaQuery(x);
+    x.addEventListener(MediaQuery);
+</script>
 </html>
