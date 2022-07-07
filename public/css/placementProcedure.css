@@ -206,6 +206,23 @@ body {
   .step-body-inner {
     word-break: keep-all;
   }
+   .placement-heading
+  {
+    font-size: 23px;
+  }
+  .step-no-inner
+  {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .step-heading
+  {
+    font-size: 22px;
+  }
+  .step-body-inner
+  {
+    font-size: 17px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
