@@ -24,12 +24,12 @@ body {
 }
 
 .placement-heading {
-  font-family: "Inter", sans-serif;
+  font: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 33px;
   line-height: 31px;
-  text-decoration-line: underline;
+  /*text-decoration-line: underline;*/
 
   color: #000000;
 }
