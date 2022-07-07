@@ -21,7 +21,7 @@ body {
   margin-left: 40px !important;
   font-weight: 500;
   /* Underline */
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   width: 100%;
   color: white;
   /* text-shadow: 0 0 20px black; */
@@ -36,14 +36,14 @@ body {
   align-items: center;
   justify-content: center;
 }
-.custom-container {
+/*.custom-container {
   /* background-image: url("/img/facilities/bg2.jpg");
     background-position: center;
-    background-attachment: fixed; */
+    background-attachment: fixed; 
 }
 .custom-container-section:nth-child(odd) {
-  /* background-color: lightgrey; */
-}
+  /* background-color: lightgrey; 
+}*/
 .section-description {
   padding-right: 4vw;
   padding-left: 4vw;
@@ -54,6 +54,7 @@ body {
   align-items: center;
   margin-left: 50px;
   margin-top: 100px;
+
 }
 
 .prog {
@@ -81,20 +82,21 @@ body {
 #btn-4,
 #btn-5 {
   border-radius: 10px;
-  width: 200px;
-  height: 60px;
+  width: 98%;
+  height: 65px;
+  padding-left:5%;
 }
 
 .grid-child green {
-  /* margin-top: 40px;
-    margin-left: 95px; */
+   margin-top: 40px;
+    margin-left: 95px; 
   padding-right: 4rem;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-gap: 20px;
+  grid-gap:0.1rem;
   /* align-items: center; */
   justify-content: center;
 }
@@ -169,9 +171,9 @@ body {
   #box-2,#box-4 img{
     padding-top: 0;
   }
-  .section-custom-para {
-    /* width: unset; */
-  }
+  /*.section-custom-para {
+    /* width: unset; 
+  }*/
   .section-custom-para h1 {
     font-size: 2rem;
   }
