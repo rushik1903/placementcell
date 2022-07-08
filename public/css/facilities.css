@@ -1,6 +1,11 @@
 /* Import inter font from google fonts */
 @import url("https://fonts.googleapis.com/css?family=Inter:400,700");
 body {
+  background-image: url("../img/icons/Pattern1.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: rgb(231, 231, 231);
   font-family: "Inter", sans-serif;
 }

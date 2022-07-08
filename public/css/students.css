@@ -1,3 +1,11 @@
+body{
+  background-image: url("../img/icons/Pattern1.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 li{
     /* text-align: justify; */
     text-justify: inter-word;

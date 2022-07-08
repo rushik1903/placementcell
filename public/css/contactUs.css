@@ -12,6 +12,7 @@
 }
 
 body{
+    min-height: 100vh;
     background-image: url("../img/icons/Pattern1.png");
     background-size: cover;
     background-attachment: fixed;
