@@ -260,11 +260,16 @@ body {
   justify-content: space-around;
 }
 @media screen and (max-width: 780px) {
+  .branch{
+    width: auto;
+  }
   .section2 {
     display: block;
     height: fit-content;
   }
-
+  .grid-layout{
+    grid-template-columns: auto;
+  }
   .design_centric {
     margin: 0px;
     padding: 0px;
@@ -312,6 +317,9 @@ body {
   border: solid 1px #214B8C;
 }
 @media screen and (max-width: 1200px) {
+  .branch{
+    width:auto
+  }
   .section1 {
     margin: 0px;
     padding: 0px;
@@ -320,7 +328,9 @@ body {
     width: 100%;
     height: fit-content;
   }
-
+  .grid-layout{
+    grid-template-columns: auto;
+  }
   .whyrecurit {
     margin: 0px;
     padding: 0px;
@@ -372,6 +382,9 @@ body {
   text-decoration: none;
 }
 @media screen and (max-width: 350px) {
+  .branch{
+    width: auto;
+  }
   .section1 {
     margin: 0px;
     padding: 0px;
@@ -380,7 +393,9 @@ body {
     width: 100%;
     height: fit-content;
   }
-
+  .grid-layout{
+    grid-template-columns: auto;
+  }
   .whyrecurit {
     margin: 0px;
     padding: 0px;
