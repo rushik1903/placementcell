@@ -1,5 +1,5 @@
 ## Placement Website
-This is a placement website for IIITDM Kancheepuram.
+This is the placement website for IIITDM Kancheepuram.
 
 ## For developers (Initial Setup)
 - clone this repo
