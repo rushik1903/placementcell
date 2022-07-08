@@ -1,5 +1,6 @@
 body{
     font-family: Inter;
+    overflow-x: hidden;
 }
 :root{
     --custom-extra-light: rgb(187, 225, 250);
@@ -237,17 +238,13 @@ abbr{
     color: white;
 }
 /* ================== Footer ==================== */
-footer{    
-    position: absolute;
-    width: 100%;
+footer{
     height:203px;
     left: 0px;
     background: #000000;
     box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
 }
 .footer-item{
-    position: absolute;
-    width: 100%;
     height: 203px;
     left: 0px;
     background: #000000;
@@ -258,7 +255,7 @@ footer{
     flex-direction: column;
 }*/
 .footer-m-footer-container-top-subitem{
-    position: absolute;
+    /* position: absolute; */
     width: 80%;
     height: 105px;
     left: 13%;
@@ -412,5 +409,63 @@ footer{
     }
     .top-navbar-menu-btn{
         font-size: 1rem!important;
+    }
+}
+
+
+.footer-colors{
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+.footerAnchor{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px 20px 20px 20px;
+    color:white;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 0.8;
+}
+
+.footerAnchor :hover{
+    color: var(--custom-extra-light);
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+a:link{
+    color: white;
+}
+
+.midFooter{
+    text-align: center;
+}
+
+.rightFooter{
+    text-align: right;
+}
+.midSection{
+    padding-top: 70px;
+}
+
+@media screen and (max-width:768px){
+    .rightFooter{
+        text-align: left;
+    }
+    .midSection{
+        padding-top: 0px;
+    }
+    .midFooter{
+        text-align: left;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    .midSection{
+        padding: 0;
     }
 }
