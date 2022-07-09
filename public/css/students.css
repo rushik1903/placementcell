@@ -17,9 +17,8 @@ li{
     
 }
 .block{
-  
-  padding-left: 15vh;
-  padding-right: 6vw;
+  padding-left: 30px;
+  padding-right: 30px;
    padding-top: 4vh;
   padding-bottom: 2vw;
   /* box-shadow: 10px 20px 20px black; */
@@ -81,20 +80,24 @@ h2{
     box-shadow: 0 5px 5px #ccc;
     padding-bottom: 2rem;
     margin-bottom: 2.5rem;
-    margin-left: 5vh;
     
     
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:768px){
     .block{
-		padding: unset;
+      padding-left: 20px;
+      padding-right: 20px;
 		min-width: unset;
 		width: 100%;
 	}
-  /* {
-		padding: unset;
-		min-width: unset;
-		width: 100%;
-	} */
+}
+
+@media screen and (max-width:576px){
+  .block{
+    padding-left: 10px;
+    padding-right: 10px;
+  min-width: unset;
+  width: 100%;
+}
 }

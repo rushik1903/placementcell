@@ -144,3 +144,7 @@ body{
 .box:hover .title{
     font-size: 20px;
 }
+
+.gapGiver{
+    min-height: 35vh;
+}
