@@ -263,8 +263,8 @@ footer{
     font: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 1.375rem;
+    line-height: 1.375rem;
     text-align: right;
     
     color: #FFFFFF;
@@ -303,8 +303,8 @@ footer{
     font: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 1.375rem;
+    line-height: 1.375rem;
     color: white;
 }
 .footer-subitem-form2{
@@ -315,8 +315,8 @@ footer{
     font: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 1.375rem;
+    line-height: 1.375rem;
     color: white;
 }
 .footer-subitem-form3{
@@ -327,8 +327,8 @@ footer{
     font: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 1.375rem;
+    line-height: 1.375rem;
     color: white;
 }
 .footer-subitem-map{
@@ -339,8 +339,8 @@ footer{
     font: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 1.375rem;
+    line-height: 1.375rem;
     color: white;
 }
 .footer-subitem-team{
@@ -350,7 +350,7 @@ footer{
     font: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 1.375rem;
     line-height: 21px;
     color: white;
 }
@@ -370,6 +370,9 @@ footer{
     width: 4rem;
 }
 @media screen and (max-width:1100px){
+    html{
+        font-size: 14px;
+    }
     .top-navbar-item{
         display: none;
     }
@@ -386,6 +389,9 @@ footer{
 }
 
 @media screen and (max-width:660px){
+    html{
+        font-size: 10px;
+    }
     .m-footer-descreption{
         width: 60vw!important;
     }
@@ -414,7 +420,7 @@ footer{
 
 
 .footer-colors{
-    font-size: 20px;
+    font-size: 1.25rem;
     background-color: black;
     color: white;
     /* position: fixed; */
@@ -457,6 +463,9 @@ a:link{
 }
 
 @media screen and (max-width:768px){
+    html{
+        font-size: 10px;
+    }
     .rightFooter{
         text-align: left;
     }
