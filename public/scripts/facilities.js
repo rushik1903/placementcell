@@ -15,8 +15,9 @@ btn3.addEventListener("click", displayCard3);
 btn4.addEventListener("click", displayCard4);
 btn5.addEventListener("click", displayCard5);
 
-let buttons = [box1, box2, box3, box4, box5];
-let boxes = [btn1, btn2, btn3, btn4, btn5];
+let buttons = [box1, box2, box3, box4, box5]; //boxes
+let boxes = [btn1, btn2, btn3, btn4, btn5]; //buttons
+buttons[0].parentElement.style.padding = "0"
 function displayCard1() {
   const box1 = document.getElementById("box-1");
   console.log("clc");
