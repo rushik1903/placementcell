@@ -144,12 +144,12 @@ body {
 }
 .section-custom-para1 {
   width: auto;
-  padding-left:70px;
+  padding-left:4.375rem;
   padding-right:1px;
 }
 .section-custom-para2 {
   width: auto;
-  padding-left:70px;
+  padding-left:4.375rem;
   padding-right:1px;
 }
 .section-custom-img {
@@ -159,6 +159,9 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+  .section-custom-para2,.section-custom-para1 {
+    padding-left:2rem;
+  }
   .section-description{
     padding-left: 0;
   }
