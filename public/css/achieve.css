@@ -37,14 +37,6 @@ body {
   right: auto;
 }
 
-/* Overlay on carousel */
-.overlay {
-  position: absolute;
-  /* top: 20%; */
-  left: 35%;
-  margin-top: 10px;
-  z-index: 1;
-}
 
 .heading-bg {
   /* background-color: #00264d; */

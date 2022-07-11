@@ -15,8 +15,9 @@ btn3.addEventListener("click", displayCard3);
 btn4.addEventListener("click", displayCard4);
 btn5.addEventListener("click", displayCard5);
 
-let buttons = [box1, box2, box3, box4, box5];
-let boxes = [btn1, btn2, btn3, btn4, btn5];
+let buttons = [box1, box2, box3, box4, box5]; //boxes
+let boxes = [btn1, btn2, btn3, btn4, btn5]; //buttons
+buttons[0].parentElement.style.padding = "0"
 function displayCard1() {
   const box1 = document.getElementById("box-1");
   console.log("clc");
@@ -30,7 +31,7 @@ function displayCard1() {
       buttons[i].parentElement.style.padding = "0";
     }
     box1.style.display = "flex";
-    box1.parentElement.style.padding = "32 0";
+    box1.parentElement.style.padding = "2rem 0";
   } else {
     box1.style.display = "none";
   }
@@ -48,7 +49,7 @@ function displayCard2() {
       buttons[i].parentElement.style.padding = "0";
     }
     box2.style.display = "flex";
-    box2.parentElement.style.padding = "32 0";
+    box2.parentElement.style.padding = "2rem 0";
   } else {
     box2.style.display = "none";
   }
@@ -66,7 +67,7 @@ function displayCard3() {
       buttons[i].parentElement.style.padding = "0";
     }
     box3.style.display = "flex";
-    box3.parentElement.style.padding = "32 0";
+    box3.parentElement.style.padding = "2rem 0";
   } else {
     box3.style.display = "none";
   }
@@ -84,7 +85,7 @@ function displayCard4() {
       buttons[i].parentElement.style.padding = "0";
     }
     box4.style.display = "flex";
-    box4.parentElement.style.padding = "32 0";
+    box4.parentElement.style.padding = "2rem 0";
   } else {
     box4.style.display = "none";
   }
@@ -102,7 +103,7 @@ function displayCard5() {
       buttons[i].parentElement.style.padding = "0";
     }
     box5.style.display = "flex";
-    box5.parentElement.style.padding = "32 0";
+    box5.parentElement.style.padding = "2rem 0";
   } else {
     box5.style.display = "none";
   }
