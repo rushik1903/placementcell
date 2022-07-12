@@ -19,6 +19,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
+  padding: 40px;
+  padding-right: 50px;
 }
 
 .header {
@@ -165,7 +167,8 @@ body {
   }
   .header
   {
-    padding: 40px;
+    position: relative;
+    padding : 30px;
   }
   .mobile-view {
     display: block;
@@ -183,7 +186,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0px;
-    padding-top: 100px;
+    padding-top: 10px;
     padding-left: 10px;
   }
   #step2 {
@@ -226,6 +229,10 @@ body {
   .step-body-inner
   {
     font-size: 17px;
+  }
+   .step-no
+  {
+    position: relative;
   }
 }
 
