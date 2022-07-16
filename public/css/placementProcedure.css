@@ -237,7 +237,7 @@ body {
 }
 
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 900px) and (max-width : 1050px) {
   .step {
     width: 100%;
     max-width: 47vw;
@@ -248,4 +248,14 @@ body {
     width: 100%;
     padding-right: 10px;
   }
+  .placement-header
+  {
+    position: relative;
+  }
+    .step-no
+  {
+    position: relative;
+  }
+
 }
+
