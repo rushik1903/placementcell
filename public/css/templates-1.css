@@ -57,7 +57,7 @@ body{
     color: #FFFFFF;
 }
 .top-navbar-item{
-    margin-left: 250px;
+    margin-left: auto;
     padding: 10px;
     display: flex;
     align-items: center;
