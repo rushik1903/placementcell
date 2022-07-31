@@ -8,7 +8,6 @@ body {
   margin: 0;
 }
 
-
 .container2 {
   margin-bottom: 60px;
 }
@@ -22,16 +21,30 @@ body {
 }
 
 .outer-1 {
-  background: conic-gradient(white 3%, #00FFE0 47%, rgba(5,0,255,0.8) 120%, white 30%);
-
+  background: conic-gradient(
+    white 3%,
+    #00ffe0 47%,
+    rgba(5, 0, 255, 0.8) 120%,
+    white 30%
+  );
 }
 
 .outer-2 {
-  background: conic-gradient(white 12%,#00FFE0 47%, rgba(5, 0, 255,0.8) 120%, white 30%);
+  background: conic-gradient(
+    white 12%,
+    #00ffe0 47%,
+    rgba(5, 0, 255, 0.8) 120%,
+    white 30%
+  );
 }
 
 .outer-3 {
-  background: conic-gradient(white 26%, #00FFE0 47%,rgba(5, 0, 255,0.8) 120%, white 30%);
+  background: conic-gradient(
+    white 26%,
+    #00ffe0 47%,
+    rgba(5, 0, 255, 0.8) 120%,
+    white 30%
+  );
 }
 
 .inner {
@@ -51,15 +64,33 @@ body {
   left: 6px;
 }
 
+.my-color{
+  color: #214B8C;
+}
 .statsCard {
   border-radius: 0;
   /* width: 300px;
     height: 250px; */
 }
 
+.container tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.my-th {
+  background-color: #214b8c !important;
+}
+.table {
+  width: fit-content !important;
+}
+#my-table td{
+  background-color: lightblue !important;
+}
 
-@media only screen and (min-width:600px) and (max-width: 992px) {
-  .outer{
+table{
+  margin-bottom: 2rem !important;
+}
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .outer {
     transform: scale(0.8);
   }
 }
