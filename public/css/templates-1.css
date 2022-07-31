@@ -554,8 +554,16 @@ abbr{
     .midFooter{
         text-align: left;
     }
-    
+   
 }
+@media screen and (min-width:320px) and (max-width:480px){
+    .top-navbar-container a:link,
+    .top-navbar-container a:visited,
+    .top-navbar-container span{
+        font-size: 20px;
+    }
+}
+
 @media screen and (min-width:768px) and (max-width:992px){
     html{
         width: 100%;
@@ -570,7 +578,15 @@ abbr{
         padding: 0;
     }
    
-}
+    .top-navbar-container a:link,
+    .top-navbar-container a:visited,
+    .top-navbar-container span{
+        font-size: 20px;
+    }
+    }
+
+   
+
 
 .mailLinker{
 }
