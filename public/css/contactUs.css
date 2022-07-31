@@ -49,7 +49,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 .big_box {
-  width: 250px;
+  width: 200px;
 }
 
 .box:hover {
@@ -61,7 +61,7 @@ body {
   transform: scale(1.1);
 }
 .big_box:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .box .avtar {
