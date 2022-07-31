@@ -74,8 +74,8 @@
       placed</div>
 
 
-    <h1 class="text-center mb-3">Placement Statistics 2021-2022</h1>
-    <div class="container">
+    <h2 class="text-left ml-5 mb-3">Placement Statistics 2021-2022</h2>
+    <div class="d-flex justify-content-center mb-3">
       <table class="table" id="my-table">
         <tr class="my-th">
           <th scope="col">Details</th>
@@ -95,7 +95,7 @@
         </tr>
       </table>
     </div>
-    <h2 class="text-center my-color">97% Students received Placement offers</h2>
+    <h2 class="text-center my-color mb-4">97% Students received Placement offers</h2>
 
     <div class="d-flex justify-content-around">
       <table class="table" id="my-table-2">
@@ -129,36 +129,40 @@
           </tr>
         </tbody>
       </table>
-      <div id="branch-wise" style="width:500px ;height:400px;" class="text-center">
+
+      <!-- Table-2 -->
+      <div>
+        <table class="table" id="my-table-2">
+          <thead>
+            <tr class="my-th">
+              <th scope="col">Course</th>
+              <th scope="col">No. of Offers</th>
+              <th scope="col">Average CTC (in LPA)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>B Tech</td>
+              <td>175</td>
+              <td>10.2</td>
+            </tr>
+            <tr>
+              <td>Dual Degree</td>
+              <td>60</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>M Tech</td>
+              <td>47</td>
+              <td>8.69</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
+    </div>
     <div class="d-flex justify-content-around">
-      <table class="table" id="my-table-2">
-        <thead>
-          <tr class="my-th">
-            <th scope="col">Course</th>
-            <th scope="col">No. of Offers</th>
-            <th scope="col">Average CTC (in LPA)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>B Tech</td>
-            <td>175</td>
-            <td>10.2</td>
-          </tr>
-          <tr>
-            <td>Dual Degree</td>
-            <td>60</td>
-            <td>12</td>
-          </tr>
-          <tr>
-            <td>M Tech</td>
-            <td>47</td>
-            <td>8.69</td>
-          </tr>
-        </tbody>
-      </table>
+      <div id="branch-wise" style="width:500px ;height:400px;" class="text-center"> </div>
       <div id="degree-wise" style="width: auto;height:auto"></div>
     </div>
     <%- include('templates/footer-1.ejs') -%>

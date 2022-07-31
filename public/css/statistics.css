@@ -11,7 +11,10 @@ body {
 .container2 {
   margin-bottom: 60px;
 }
-
+th{
+  color: #fff;
+  font-weight: 500 !important;
+}
 .outer {
   width: 250px;
   height: 250px;
@@ -82,9 +85,9 @@ body {
 .table {
   width: fit-content !important;
 }
-#my-table td{
+/* #my-table td{
   background-color: lightblue !important;
-}
+} */
 
 table{
   margin-bottom: 2rem !important;
