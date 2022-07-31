@@ -19,7 +19,7 @@ body {
 /* About section */
 
 #home {
-  background: url(../img/home_campusview.jpg) center;
+  background: url(../img/IMG_20220508_170010_587\ -\ ME21B2001\ KATRAVATH\ PAVAN.jpg) center;
   background-size: cover;
 }
 
@@ -123,7 +123,7 @@ body {
 
 #sandn {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../img/wall.jpeg) no-repeat center;
+    url(../img/20220411_062116\ -\ EC21B1029\ THOTA\ NAGA\ VENKATA\ SAKET\ RAM.jpg) no-repeat center;
   background-size: cover;
   opacity: 1.5;
 }
