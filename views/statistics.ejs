@@ -162,7 +162,7 @@
     </div>
     </div>
     <div class="d-flex justify-content-around">
-      <div id="branch-wise" style="width:500px ;height:400px;" class="text-center"> </div>
+      <div id="branch-wise" style="width:31rem ;height:25rem;" class="text-center"> </div>
       <div id="degree-wise" style="width: auto;height:auto"></div>
     </div>
     <%- include('templates/footer-1.ejs') -%>
@@ -170,6 +170,25 @@
       <!-- Include jQuery -->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
       <script src="/scripts/statistics.js"></script>
+    <script>
+      // for media screen
+      $(window).resize(function () {
+        if ($(window).width() < 768) {
+          console.log("mobile");
+          $('#branch-wise').css('width', '100%');
+          $('#branch-wise').css('height', 'auto');
+          $('#degree-wise').css('width', '100%');
+          // add class to $('.d-flex')
+          $('.d-flex').addClass('align-items-center');
+        } else {
+          console.log("desktop");
+          $('#branch-wise').css('width', '500px');
+          $('#degree-wise').css('width', 'auto');
+          // remove class to $('.d-flex')
+          $('.d-flex').removeClass('align-items-center');
+        }
+      }).resize();
+    </script>
 </body>
 
 </html>

@@ -33,7 +33,7 @@ function drawChart() {
 	title: "No. of offers branch-wise",
 	  backgroundColor: "transparent",
 	  width: 500,
-	  height: 400,
+	  height: 300,
   };
 
   var chart = new google.visualization.PieChart(
@@ -56,7 +56,7 @@ function drawMyChart() {
 	title: "No. of offers branch-wise",
 	  backgroundColor: "transparent",
 	  width: 500,
-	  height: 400,
+	  height: 300,
   };
 
   var chart = new google.visualization.PieChart(

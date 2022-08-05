@@ -92,6 +92,12 @@ th{
 table{
   margin-bottom: 2rem !important;
 }
+/* Media query for mobiles and tablets */
+@media only screen and (max-width: 768px) {
+  .d-flex {
+    flex-direction: column !important;
+  }
+}
 @media only screen and (min-width: 600px) and (max-width: 992px) {
   .outer {
     transform: scale(0.8);
