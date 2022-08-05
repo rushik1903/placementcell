@@ -70,4 +70,8 @@ route.get("/schedule_and_faq", (req, res) => {
   res.render("schedule_and_faq");
 });
 
+route.get("/internshipRules", (req, res) => {
+  res.render("internshipRules");
+});
+
 module.exports = route;
