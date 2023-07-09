@@ -7,7 +7,7 @@ const path = require('path');
 app.use(express.static(path.join(__dirname, 'public')));
 
 //bodyparser middleware
-// parse application/x-www-form-urlencoded
+// parse application/x-www-form-urlencoded_
 app.use(bodyParser.urlencoded({ extended: false }))
 
 // parse application/json
