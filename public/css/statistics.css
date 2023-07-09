@@ -23,6 +23,9 @@ th{
   /* position: relative; */
 }
 
+
+
+
 .outer-1 {
   background: conic-gradient(
     white 3%,
@@ -93,7 +96,7 @@ table{
   margin-bottom: 2rem !important;
 }
 /* Media query for mobiles and tablets */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 770px) {
   .d-flex {
     flex-direction: column !important;
   }
