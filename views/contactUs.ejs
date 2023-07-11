@@ -10,9 +10,7 @@
 </head>
 
 <body>
-    <header>
-        <%- include('templates/header-1.ejs') -%>
-    </header>
+    <%- include('templates/header-1.ejs') -%>
 
     <section id="main-section"></section>
     <script>
@@ -527,14 +525,14 @@
                     <div class="row no-gutters" style="column-gap:40px;">`;
 
                 teamData[title].forEach(member => {
-                    htmlCode += `<div class="text-center">
+                    htmlCode += `<div class="text-center profile-card">
                         <div class="box big_box">
                             <div class="avtar">
                                 <img class="img-fluid" src="${member.image}">
                             </div>
                             <div class="box-content">
                                 <h5 class="title">${member.name}</h5>
-                                <span class="post">${member.post}</span>`;
+                                <span class="post">${member.post}</span><br>`;
 
                     // Additional contact details for Placement Office
                     if (member.contact) {
@@ -563,15 +561,21 @@
         // Call the function to append the team section
         appendTeamSection();
     </script>
-    <div class="contact_info ml-5 pt-5 ">
-        <h2>Contact information</h2><br>
-        <h4>Address: <br> IIITDM Kancheepuram,<br> Vandalur-Kelambakkam Road,<br> Chennai: 600127. </h4>
-        <h4><br><i class="fa fa-phone" aria-hidden="true"></i> +91-44-2747 6316 </h4>
-        <h4><i class="fa fa-envelope" aria-hidden="true"></i> placement@iiitdm.ac.in </h4><br><br>
+    <div class="contact-card">
+        <h2 class="font-weight-dark">Contact Information</h2>
+        <p class="address">
+          Address:<br>
+          IIITDM Kancheepuram,<br>
+          Vandalur-Kelambakkam Road,<br>
+          Chennai: 600127.
+        </p>
+        <p class="phone">+91-44-2747 6316</p>
+        <p class="email">placement@iiitdm.ac.in</p>
     </div>
-    <footer>
-        <%- include('templates/footer-1.ejs') -%>
-    </footer>
+      
+      
+
+    <%- include('templates/footer-1.ejs') -%>
 </body>
 
 </html>
