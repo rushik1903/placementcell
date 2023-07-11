@@ -13,11 +13,6 @@
 
 body {
   min-height: 100vh;
-  background-image: url("../img/icons/Pattern1.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
   font-family: "Inter", sans-serif;
 }
 
@@ -35,7 +30,7 @@ body {
 
 .box {
   margin-bottom: 20px;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(219, 218, 248, 0.6);
   border-radius: 10px;
   height: 305px;
   margin-left: 5px;
@@ -156,4 +151,42 @@ body {
 
 .margin_right {
   margin-right: 1000px;
+}
+
+/* Contact Information */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.contact-card {
+  color: #214B8C;
+  padding: 20px;
+  margin-left: 30px;
+  border-radius: 8px;
+}
+.contact-card h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+.contact-card .address {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.contact-card .phone,
+.contact-card .email {
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.contact-card .phone:before,
+.contact-card .email:before {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.contact-card .address,
+.contact-card .phone,
+.contact-card .email {
+  line-height: 1.5;
 }
