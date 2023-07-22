@@ -53,8 +53,8 @@ body {
 .whyrecurit {
   background: linear-gradient(
     180deg,
-    rgba(8, 0, 56, 0.4) 0%,
-    rgba(131, 131, 131, 0.08) 100%
+    rgba(8, 0, 56, 0.8) 0%,
+    rgba(131, 131, 131, 0.6) 100%
   );
   /* height: fit-content; */
   /* width: auto; */
