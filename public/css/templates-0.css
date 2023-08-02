@@ -34,7 +34,7 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow:0px 0px 4rem rgba(0, 0, 0, 0.459);
+    box-shadow:0px 0px 4rem rgba(33,74,141,255);
     z-index: 100;
 
 	min-width: 350px;
