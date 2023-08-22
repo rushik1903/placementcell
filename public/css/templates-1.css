@@ -245,8 +245,8 @@ abbr{
 .footer-colors{
     padding-top: 10px;
     font-size: 1.2rem;
-    background-color: rgba(33,74,141,255);
-    color: white;
+    background-color:white ;
+    color: rgba(33,74,141,255);
     /* position: fixed; */
     bottom: 0;
     width: 100%;
@@ -256,7 +256,7 @@ abbr{
     padding-left: 20px;
     padding-right: 20px;
     /* margin: 20px 20px 20px 20px; */
-    color:white;                                                         
+    color:rgba(33,74,141,255);                                                         
     text-decoration: none;
     font-weight: 400;
     line-height: 0.8;
@@ -266,11 +266,11 @@ abbr{
     color: var(--custom-extra-light);
 }
 .footer-colors a:visited{
-    color: white;
+    color: rgba(33,74,141,255);
     text-decoration: none;
 }
 .footer-colors a:link{
-    color: white;
+    color: rgba(33,74,141,255);
 }
 
 .midFooter{
