@@ -1,6 +1,6 @@
 var express = require("express");
 var route = express.Router();
-
+//routes
 route.get("/", (req, res) => {
   res.render("home");
 });

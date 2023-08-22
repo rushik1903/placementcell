@@ -16,16 +16,20 @@ body{
 }
 /*==================== Nav Bar==================== */
 .top-navbar{
-    background-color: rgba(33,74,141,255);
+    /* background-color: rgba(33,74,141,255); */
     /* background-image: linear-gradient(to right,var(--custom-extra-dark),var(--custom-light)); */
     position: absolute;
     z-index: 100;
     width: 100%;
     top: 0%;
-    box-shadow: 0px 8px 4px #072b6867;
+    box-shadow: 0px 4px 2px #58595b67;
     font-family: "Inter";
 }
+.top-navbar img{
+    margin-left: 10%;
+}
 .top-navbar-container{
+    border-top: 0.1px solid #b4b4b4;;
     display: flex;
     align-items: center;
     padding-top: 5px;
@@ -34,7 +38,7 @@ body{
 .top-navbar-container a:link,
 .top-navbar-container a:visited,
 .top-navbar-container span{
-    color: white;
+    color: rgba(33,74,141,255);
     /* font-size: 22px; */
     text-decoration: none;
 }
@@ -106,7 +110,6 @@ body{
 .top-navbar-item-link-dd-title:hover,
 .top-navbar-item-link-dd:hover .top-navbar-item-link-dd-title{
     text-decoration:underline;
-    color: #FFFFFF;
     cursor: pointer;
 }
 .top-navbar-item-link:active{
@@ -131,7 +134,7 @@ abbr{
 .top-navbar-item-link-dd-content-spacing{
     padding-left: 3.8rem;
     margin-top: -1.8rem;
-    color: black;
+    color: white;
 }
 .top-navbar-custom-dd .top-navbar-item-link-dd-content-spacing{
     padding-left: 8.5rem;
@@ -143,7 +146,7 @@ abbr{
     position: absolute;
     flex-direction: column;
     transition: all 1s;
-    background-color:black;
+    background-color:white;
     border-radius: 10px;
     width: 20rem;
 }
@@ -159,10 +162,10 @@ abbr{
     font-size:20px;
     line-height:28px;
     display: flex;
+    border-bottom: 0.01px solid rgb(180, 176, 176);
    
 }
 .top-navbar-item-link-dd-content li:hover{
-    color:white;
     text-decoration: underline;
     border-radius: 5px;
     cursor: pointer;
@@ -223,10 +226,9 @@ abbr{
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: black;
+    background-color: white;
 }
 .dd-s-content-link-dd:hover .dd-s-content-link-dd-title{
-    color:white;
     cursor: pointer;
 }
 .dd-s-content-link-dd-content a{
@@ -239,123 +241,7 @@ abbr{
 .dd-s-content a:active{
     color: white;
 }
-/* ================== Footer ==================== */
-/*footer{
-    height:203px;
-    left: 0px;
-    background: #000000;
-    box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
-}
-.footer-item{
-    height: 203px;
-    left: 0px;
-    background: #000000;
-    box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
-}
-/*.footer-item:last-child{
-    display: flex;
-    flex-direction: column;
-}
-.footer-m-footer-container-top-subitem{
-    /* position: absolute; 
-    width: 80%;
-    height: 105px;
-    left: 13%;
-    top:25%;
-    font: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.375rem;
-    line-height: 1.375rem;
-    text-align: right;
-    
-    color: #FFFFFF;
-    
-}
-.footer-subitem i{
-    padding: 7px;
-    position: absolute;
-    left: 90.85%;
-    bottom: 37%;
-}
 
-.footer-subitem i1{
-    padding: 7px;
-    position: absolute;
-    left: 86%;
-    bottom:37%;
-   
-}
-.footer a:link,.footer a:visited{
-    text-decoration: none;
-    color:#FFFFFF;
-}
-.footer a:hover{
-    color:var(--custom-extra-light);
-}
-.footer a:active{
-    color:var(--custom-light);
-}
-.footer-subitem-form1{
-    position: absolute;
-    width: 80%;
-    height: 105px;
-    left: 5%;
-    top:13.8%;
-    font: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.375rem;
-    line-height: 1.375rem;
-    color: white;
-}
-.footer-subitem-form2{
-    position: absolute;
-    width: 80%;
-    left: 5%;
-    top: 53.2%;
-    font: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.375rem;
-    line-height: 1.375rem;
-    color: white;
-}
-.footer-subitem-form3{
-    position: absolute;
-    width: 80%;
-    left: 5%;
-    top: 33.5%;
-    font: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.375rem;
-    line-height: 1.375rem;
-    color: white;
-}
-.footer-subitem-map{
-    position: absolute;
-    width: 80%;
-    left: 5%;
-    top: 73.8%;
-    font: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.375rem;
-    line-height: 1.375rem;
-    color: white;
-}
-.footer-subitem-team{
-    position: absolute;
-    left: 40%;
-    top: 68%;
-    font: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.375rem;
-    line-height: 21px;
-    color: white;
-}*/
 .footer-colors{
     padding-top: 10px;
     font-size: 1.2rem;
@@ -492,7 +378,7 @@ abbr{
 .footer-colors{
     padding-top: 10px;
     font-size: 1.2rem;
-    background-color: black;
+    background-color: white;
     color: white;
     /* position: fixed; */
     bottom: 0;
