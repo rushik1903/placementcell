@@ -18,13 +18,13 @@
         <div class="faq-container">
             <h2 class="FAQ">FAQ</h2>
             <div class="faq-list">
-                <div class="faq-item">
-                    <h3  class="question" onclick='toggle("#ans1")' >Question 1</h3>
-                    <div  class="answer" id="ans1" >
+                <div class="faq-item" onClick='toggle("faq-item")'>
+                    <h3  class="question">Question 1</h3>
+                    <!-- <div  class="answer" id="ans1" >
                         <p>Answer 1</p>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="faq-item" onclick='toggle("#ans2")'>
+                <div class="faq-item" onClick='toggle("ans2")'>
                     <h3  class="question"  >Question 2</h3>
                     <div class="answer" id="ans2">
                         <p>Answer 2</p>
@@ -55,25 +55,21 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Anand:Table rows will be dynamically added here -->
+          <!-- Table rows will be dynamically added here by the below script -->
         </tbody>
       </table>
     </div>
   </div>
 
   <script>
+    console.log("hi")
     function toggle(answer)
     {
       console.log("hi");
-      let ans=document.getElementById(answer);
-      if(ans.style.display=='block')
-      {
-        ans.style.display='none';
-      }
-      else
-      {
-        ans.style.display='block';
-      }
+      let item=document.querySelector(answer);
+      var ans=document.createElement('p');
+      ans.innerHTML="Answer1";
+      item.appendChild(ans);
     }
     var data = [
       { col1: 'Data 1', col2: 'Data 2', col3: 'Data 3' },
