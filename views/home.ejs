@@ -23,6 +23,96 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/recruiters.css">
+
+    <style>
+        .director-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        .dir_msg {
+            flex: 2; /* Add some padding for spacing */
+        }
+        .img_container {
+            flex: 1;
+            display: flex;
+            align-items: center; /* Center vertically */
+            justify-content: flex-end; /* Justify content to the right */
+
+        }
+        .img_container img {
+            width: 80%; /* Set the width to 90% */
+            height: auto; /* Let the height adjust proportionally */
+            max-height: 80%; /* Limit height to 90% */
+            object-fit: contain;
+            margin-right: 5%; /* Margin for horizontal centering */
+        }
+
+        #read-more-button {
+            background-color: transparent; /* Remove background color */
+            color: blue; /* Change text color */
+            border: none;
+            padding: 5px; /* Adjust padding */
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold; /* Make text bold */
+            text-decoration: underline; /* Add underline */
+        }
+
+        .about-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        .about_iiitdm {
+            flex: 2;
+            padding-right: 20px; /* Add some padding for spacing */
+        }
+        .contents {
+            color: black;
+            font-weight: 400;
+            font-family: Inter;
+            font-style: normal;
+            font-size: 1.1rem;
+            overflow: hidden;
+        }
+        #full-about {
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+        #read-button {
+            background-color: transparent;
+            color: blue;
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .director-wrapper {
+                flex-direction: column; /* Stack items vertically */
+            }
+            .dir_msg {
+                order: 2; /* Change order for content section */
+                padding: 0; /* Remove right padding */
+            }
+            .img_container {
+                order: 1; /* Change order for image */
+                text-align: center; /* Center align for image */
+                align-items: center; /* Center vertically */
+            }
+            .img_container img {
+                width: 70%; /* Adjust image width for phone view */
+                max-height: none; /* Reset max-height for phone view */
+                object-fit: contain;
+                margin-right: 15%; /* Remove margin for image */
+                margin-bottom: 10px; /* Add margin at bottom for spacing */
+            }
+        }
+
+    </style>
 </head>
 
 
@@ -32,92 +122,76 @@
             <img src="../img/IMG_20220508_170010_587 - ME21B2001 KATRAVATH PAVAN.jpg" alt="">
         </div>
         <div class="container-fluid" id="home";">
-            <!-- <div class="row">
-                <div class="col-0 col-md-4 col-lg-6"></div>
-                <div class="col-12 col-md-8 col-lg-6" id="about_row">
-                    <div class="col-xl">
-                        <div class="about_info">
-                            <div class="about_head" style="opacity: 1;">About IIITDM Kancheepuram</div>
-                            <div class="main_about_body">
-                                <p>Indian Institute of Information Technology Design and Manufacturing (IIITDM)
-                                    Kancheepuram is an Institute of National Importance, established by the MHRD,
-                                    Government of India in 2007 with the mandate of specializing in design and
-                                    manufacturing oriented engineering education and research. Human resource
-                                    development reforms of the past have helped India to attain global recognition in
-                                    knowledge and IT enabled services. A strong foothold in the design market will
-                                    propel the nation's growth and IIITDMs are a result of the Government of India's
-                                    vision to produce next generation engineers equipped with design and manufacturing
-                                    skills.</p>
-                                <p>The institute provides the ambience where creativity and new ideas flourish,
-                                    producing leaders of tomorrow by imparting learning blended with excellence. The
-                                    dynamic and constantly evolving academic program reflects the institute's commitment
-                                    to stay abreast with pushing the frontiers of knowledge worldwide. Extracurricular
-                                    activities enjoy equal importance towards overall development of students, making
-                                    them fit for the challenges of the corporate world.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        </div>
+            
 
-        <!-- Directors Message -->
-        <!-- <div class="container-fluid" style="clear:right;">
-        <div class="row">
-            <div class="col-xl ">
-                <div class="Director_imgContainer">
-                    <img class="Director_img mx-auto d-block"
-                    src="http://www.iiitdm.ac.in/img/bog/Prof_DVLN_Somayajulu.png" alt="">
-                </div>
-            </div>
-            <div class="col-xl">
-                <div class="about_info" style="margin-top: 50px;">
-                    <div class="about_head">Director's Message</div>
-                <div class="main_about_body">
-                    <p>At the outset, I extend my warm greetings on behalf of IIITDM Kancheepuram and on my personal behalf. IIITDM Kancheepuram is a unique Institution of National importance with a special mandate to produce quality engineers in the field of Electronics and Communication Engineering, Computer Science and Engineering, Mechanical Engineering and Smart Manufacturing with a special thrust to IT, Design, and Manufacturing.</p>
-                    <p>Unlike outputs from other technical institutions, our products are imbibed with core courses along with special knowledge in IT, Design and Manufacturing. The unique curriculum is framed keeping Industry 4.0 standard in mind and has Three IT courses, Six Design and Manufacturing courses across the disciplines. The students undertake interdisciplinary projects leading to smart products. The curriculum also supports three months summer internship followed by a semester duration industry projects.</p>
-                    <p>IIITDM has a strong industry connect with MoUs signed for collaborative product oriented Research and Development. The strong faculty base graduated from top tech schools engage the students in R&D activities to make them innovative and future thinkers. Since inception, IIITDM has been a meeting point of ideas and congregation of best academic practices.</p>   
-                    <p>Overall the students groomed up in a conducive environment are industry ready by the time they pass out from IIITDM and and I am sure they are industry-ready and productive from day one. I welcome you once again to realize your experience with IIITDM faculty and students.</p>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- about iiitdm section -->
     <div class="about-wrapper">
         <section class="about_iiitdm">
             <div class="about_container">
                 <div style="color: black">
                     <h6><u style="font-weight: 350;
-            font-family:Inter;
-            font-style: normal;font-size: 1.9rem;">About IIITDM</u></h6>
+                        font-family: Inter;
+                        font-style: normal;font-size: 1.9rem;">About IIITDM</u></h6>
                 </div>
                 <br>
-                <div class="contents dcc" style="color: black; font-weight: 400;
-        font-family: Inter;
-        font-style: normal; font-size: 1.1rem; ">
-                    <p>Globalization has created uniformity in customer expectations the world over. With the opening of the Indian economy, our manufacturing sector must compete globally even in the domestic market. This would require strong products with leading technology/quality and compelling cost advantage. Suitably trained manpower with skill sets appropriate for design, development, and prototyping using modern IT tools is critical to achieving this goal. 
+                <div class="contents" id="short-about">
+                    <p>
+                        Globalization has created uniformity in customer expectations the world over. With the opening of the Indian economy, our manufacturing sector must compete globally even in the domestic market. This would require strong products with leading technology/quality and compelling cost advantage. Suitably trained manpower with skill sets appropriate for design, development, and prototyping using modern IT tools is critical to achieving this goal. 
+                        <br/><br/>
+                        This Institute is envisioned as an academic institution of excellence that would facilitate and promote the competitive advantage of Indian products in global markets. This Institute will serve as an interdisciplinary institution for education and research in the area of Product Lifecycle Management (PLM) encompassing design and manufacturing using state-of-the-art concepts, tools, processes, and practices of the industry world over.
+                    </p>
+                </div>
+                <div class="contents" id="full-about">
+                    <p>
+                        Globalization has created uniformity in customer expectations the world over. With the opening of the Indian economy, our manufacturing sector must compete globally even in the domestic market. This would require strong products with leading technology/quality and compelling cost advantage. Suitably trained manpower with skill sets appropriate for design, development, and prototyping using modern IT tools is critical to achieving this goal. 
                         <br/><br/>
                         This Institute is envisioned as an academic institution of excellence that would facilitate and promote the competitive advantage of Indian products in global markets. This Institute will serve as an interdisciplinary institution for education and research in the area of Product Lifecycle Management (PLM) encompassing design and manufacturing using state-of-the-art concepts, tools, processes, and practices of the industry world over. Indian Institute of Information Technology Design and Manufacturing Kancheepuram (IIITDM Kancheepuram) is a Centre of Excellence for technical education and research established in 2007 by the Ministry of Education, Government of India to pursue design and manufacturing-oriented engineering education and research and to promote the competitive advantage of Indian products in global markets.
                         <br/><br/>
                         The institute offers academic and research programs that integrate engineering design, manufacturing, and management with information technology. The institute offers undergraduate and postgraduate programs which focus on IT, design, and manufacturing in engineering sectors. The institute is located on a 51-acre campus on the outskirts of Chennai, off the Vandalur-Kelambakkam road. It is a fully residential campus with all students residing within the campus. The campus houses the academic block, the administrative block, the lecture hall complex, and the laboratory block.
-                        </p>
+                    </p>
                 </div>
+                <button id="read-button" onclick="toggleReadMore2()">Read More</button>
             </div>
         </section>
     </div>
+    <script>
+        function toggleReadMore2() {
+            var shortAboutDiv = document.getElementById("short-about");
+            var fullAboutDiv = document.getElementById("full-about");
+            var button = document.getElementById("read-button");
+
+            if (shortAboutDiv.style.display === "none") {
+                shortAboutDiv.style.display = "block";
+                fullAboutDiv.style.display = "none";
+                button.innerHTML = "Read More";
+            } else {
+                shortAboutDiv.style.display = "none";
+                fullAboutDiv.style.display = "block";
+                button.innerHTML = "Read Less";
+            }
+        }
+    </script>
         <div class="director-wrapper">
             <section class="dir_msg">
                 <div class="dir_container">
                     <div style="color: black">
                         <h6><u style="font-weight: 350;
-                font-family:Inter;
-                font-style: normal;font-size: 1.9rem;">Director's Message</u></h6>
+                            font-family: Inter;
+                            font-style: normal;font-size: 1.9rem;">Director's Message</u></h6>
                     </div>
                     <br>
-                    <div class="contents dcc" style="color: black; font-weight: 400;
-            font-family: Inter;
-            font-style: normal; font-size: 1.1rem; ">
+                    <div class="contents dcc" id="short-msg" style="color: black; font-weight: 400;
+                        font-family: Inter;
+                        font-style: normal; font-size: 1.1rem; overflow: hidden;">
+                        <p>
+                            I extend my warm greetings on behalf of IIITDM Kancheepuram. IIITDM Kancheepuram is an Institute of National Importance established by the Ministry of Education with a vision to develop a premier Institute of Excellence in IT, Design, and Manufacturing.
+                            <br/><br/>
+                            IIITDM Kancheepuram aims to create an academic environment that fosters innovation, entrepreneurship, and research excellence, with a strong industry-academia interface. We follow a robust "learning by doing" practice under which the Institute strives to provide its students with state-of-the-art facilities, industry exposure, and hands-on experience in cutting-edge technologies, preparing them to become leaders in their chosen fields.
+                            
+                        </p>
+                    </div>
+                    <div class="contents dcc" id="full-msg" style="color: black; font-weight: 400;
+                        font-family: Inter;
+                        font-style: normal; font-size: 1.1rem; display: none;">
                         <p>
                             I extend my warm greetings on behalf of IIITDM Kancheepuram. IIITDM Kancheepuram is an Institute of National Importance established by the Ministry of Education with a vision to develop a premier Institute of Excellence in IT, Design, and Manufacturing.
                             <br/><br/>
@@ -129,16 +203,34 @@
                             
                             IIITDM Kancheepuram has signed several MoUs with various organizations and Institutes to facilitate collaborative research, student exchange programs, and other activities. The strong faculty base that graduated from top technical institutes engages and guides the students in R&D activities to make them innovative and future thinkers. Many of our faculty are experienced practitioners who have a penchant for interactive classroom sessions, ensuring that the content is on par with prevalent industry demands. Overall, the students are groomed in a conducive environment and I am sure they are industry-ready and productive from day one. I wish the upcoming placement program a great success and look forward to establishing relationships with new recruiters while also strengthening the current partnerships. I welcome you once again to realize your experience with IIITDM Kancheepuram.
                         </p>
-                        <br>
-                        <br>
-                        <h6 style="text-align: right; font-weight: 750;">-Prof. D V L N Somayajulu</h6>
                     </div>
-                </div>
-                <div class="img_container">
-                    <img src="https://www.iiitdm.ac.in/img/bog/profkarthik.jpg" alt="">
+                    <button id="read-more-button" onclick="toggleReadMore()">Read More</button>
+                    <br>
+                    <h6 style="text-align: right; font-weight: 750;">-Prof. D V L N Somayajulu</h6>
                 </div>
             </section>
+            <div class="img_container">
+                <img src="https://www.iiitdm.ac.in/img/bog/profkarthik.jpg" alt="">
+            </div>
         </div>
+        <script>
+            function toggleReadMore() {
+                var shortMsgDiv = document.getElementById("short-msg");
+                var fullMsgDiv = document.getElementById("full-msg");
+                var button = document.getElementById("read-more-button");
+    
+                if (shortMsgDiv.style.display === "none") {
+                    shortMsgDiv.style.display = "block";
+                    fullMsgDiv.style.display = "none";
+                    button.innerHTML = "Read More";
+                } else {
+                    shortMsgDiv.style.display = "none";
+                    fullMsgDiv.style.display = "block";
+                    button.innerHTML = "Read Less";
+                }
+            }
+        </script>
+    
 
 
         <!-- Statictics and notifications -->
