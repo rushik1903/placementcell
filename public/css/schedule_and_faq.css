@@ -41,6 +41,18 @@ li {
   font-size: 1.2rem;
   margin-bottom: 0;
 }
+.FAQ{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 10px;
+  font-weight: 100;
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  border: 2px solid #969696;
+  padding: 30px;
+  text-align: center;
+  background-color: rgb(210, 204, 204);
+}
 
 .faq-container {
   box-sizing: content-box;
@@ -101,18 +113,7 @@ li {
  text-align: center;
 }
 
-.FAQ{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 10px;
-  font-weight: 100;
-  box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  border: 2px solid #969696;
-  padding: 30px;
-  text-align: center;
-  background-color: rgb(210, 204, 204);
-}
+
 thead{
  text-align: center;
  height:30px;
@@ -129,6 +130,6 @@ table{
 }
 hr {
   height: 5px;
-  background-color: #000; 
+  background-color: #fdfafaed; 
   border: none; 
 }
