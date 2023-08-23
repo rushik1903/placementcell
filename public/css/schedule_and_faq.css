@@ -6,11 +6,11 @@ body {
   background-repeat: no-repeat;
   
 }
-
-li {
-  text-justify: inter-word;
-  padding: 0.4rem 1rem 0.5rem 3rem;
-  font-family: 'Inter', sans-serif;
+span{
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  font-size: 18px;
 }
 
 .block {
@@ -41,6 +41,108 @@ li {
   font-size: 1.2rem;
   margin-bottom: 0;
 }
+
+.schedule{
+ font-family:Georgia, 'Times New Roman', Times, serif
+ font-size:medium;
+ font-weight: bolder;
+ position: relative;
+ left:20px;
+ width:75%;
+ padding: 10px;
+ left:15%;
+ position:relative;
+ text-align: center;
+}
+
+hr {
+  position: relative;
+  top: 20px;
+  border: none;
+  height: 12px;
+  background: black;
+  margin-bottom: 10px
+  
+}
+
+.col-12 {
+  margin-bottom: 20px;
+}
+
+.block {
+  background-color: #d2cfcf;;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.block:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper {
+  padding: 20px;
+  background-color:   #ffffff;
+}
+
+.StepProgress {
+  list-style: none;
+  padding: 0;
+  
+}
+
+.progress-bar {
+  width: 630px;
+  height: 150px;
+  border-radius: 2px;
+  margin-top: 10px;
+  position: relative;
+  overflow: auto;
+  background-color: #ffffff;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.progress-bar:hover {
+  transform: scale(1.05);
+}
+
+.text-animation-container {
+  margin-top:10px;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  color:  #0F4C75;
+  font-size: 20px;
+  font-weight: 300px;
+}
+
+.text-animation {
+  margin-top:10px;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  white-space: nowrap;
+  animation: moveText 40s linear infinite;
+}
+
+@keyframes moveText {
+  0% {
+      right: 100%;
+  }
+  100% {
+      right: -100%;
+  }
+}
+/* 
 .FAQ{
   font-family: 'Times New Roman', Times, serif;
   font-size: 10px;
@@ -87,8 +189,7 @@ li {
   font-size: 17px;
   font-weight: bold;
   padding: 20px;
-  background-color: darkblue;
- 
+  background-color: #0F4C75;
 }
 
 .answer {
@@ -102,34 +203,4 @@ li {
   text-align: center;
   margin: 10px;
   font-size: 16px;
-}
-.schedule{
- font-family: 'Times New Roman', Times, serif;
- font-size: medium;
- position: relative;
- left:20px;
- width:75%;
- padding: 10px;
- text-align: center;
-}
-
-
-thead{
- text-align: center;
- height:30px;
-}
-tbody{
-  text-align: center;
-}
-table{
-  height:90%;
-  width:100%;
-  border-radius:2px;
-  position:relative;
-  top:5%;
-}
-hr {
-  height: 5px;
-  background-color: #fdfafaed; 
-  border: none; 
-}
+} */

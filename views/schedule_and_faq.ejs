@@ -7,94 +7,94 @@
     <link rel="icon" href="img/icons/logo.png" type="image/icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/schedule_and_faq.css">
-    
+    <style>
+        /* Your custom CSS styles go here */
+        
+    </style>
 </head>
 <body>
- 
     <%- include('templates/header-1.ejs') -%>
-  
-
-    <div class="faq-box" style="text-align: right;position:absolute;right:5px;top:50%">
+    <!-- The below block is commented as in the future FAQ  blog might be usefull  -->
+   <!-- <div class="faq-box" style="text-align: right;position:absolute;right:5px;top:50%">
         <div class="faq-container">
             <h2 class="FAQ">FAQ</h2>
             <div class="faq-list">
-                <div class="faq-item" onClick='toggle("faq-item")'>
+                <div class="faq-item" onClick='toggle("ans1")'>
                     <h3  class="question">Question 1</h3>
-                    <!-- <div  class="answer" id="ans1" >
+                    <div  class="answer" id="ans1" style="display: none;">
                         <p>Answer 1</p>
-                    </div> -->
+                    </div> 
                 </div>
                 <div class="faq-item" onClick='toggle("ans2")'>
                     <h3  class="question"  >Question 2</h3>
-                    <div class="answer" id="ans2">
+                    <div class="answer" id="ans2" style="display: none;">
                         <p>Answer 2</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div> -->
+    <div class="text-animation-container">
+        <div class="text-animation">
+            <a href="https://calendar.google.com/calendar/embed?src=c_6702c549a206e7e63136e56311c7c0c297340c94556ecf3298ca3be3a3da9373%40group.calendar.google.com&ctz=Asia%2FKolkata">Click here to view the Placement Calendar for 2023 to 2024</a>
+        </div>
     </div>
-
-
-
     <div class="block_h col-12">
         <h2 class="schedule">
             PLACEMENT SCHEDULE
             <hr>
         </h2>
-        
     </div>
 
-  <div class="col-12">
-    <div class="block d-flex flex-column  align-items-center" style="height:700px;width:50%;position:relative;left:10%;bottom:8%;background-color: rgb(45, 43, 43); border-radius: 10px; overflow: auto;">
-      <table id="myTable" class="table table-dark">
-        <thead >
-          <tr>
-            <th >Column 1</th>
-            <th>Column 2</th>
-            <th>Column 3</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Table rows will be dynamically added here by the below script -->
-        </tbody>
-      </table>
+    <div class="col-12">
+        <div class="block d-flex flex-column align-items-center" style="height:670px;width:50%;position:relative;left:28%;bottom:8%; overflow: auto;">
+            <div class="wrapper">
+                <ul class="StepProgress">
+                    <li>
+                       <span>DRIVE 1:</span><div class="progress-bar" id="progress-bar-1"></div>
+                    </li>
+                    <li>
+                       <span>DRIVE 2:</span><div class="progress-bar" id="progress-bar-2"></div>
+                    </li>
+                    <li>
+                       <span>DRIVE 3:</span><div class="progress-bar" id="progress-bar-3"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </div>
-
-  <script>
-    console.log("hi")
-    function toggle(answer)
-    {
-      console.log("hi");
-      let item=document.querySelector(answer);
-      var ans=document.createElement('p');
-      ans.innerHTML="Answer1";
-      item.appendChild(ans);
-    }
-    var data = [
-      { col1: 'Data 1', col2: 'Data 2', col3: 'Data 3' },
-      { col1: 'Data 4', col2: 'Data 5', col3: 'Data 6' },
-      { col1: 'Data 7', col2: 'Data 8', col3: 'Data 9' }
-      // Add more data objects as needed
-    ];
-
-    var tableBody = document.querySelector('#myTable tbody');
-
-    for (var i = 0; i < data.length; i++) {
-      var row = document.createElement('tr');
-      row.innerHTML = '<td>' + data[i].col1 + '</td>' +
-                      '<td>' + data[i].col2 + '</td>' +
-                      '<td>' + data[i].col3 + '</td>';
-      tableBody.appendChild(row);
-    }
-    
-  </script>
-
-
 
     <%- include('templates/footer-1.ejs') -%>
 
-   
+    <script>
+        var data = [
+            { content: `16 / 08 / 2023`  },
+            { content: `26 / 08 / 2023`  },
+            { content: `20 / 09 / 2023`  },
+            { content: `29 / 09 / 2023`  },
+            { content: `09 / 10 / 2023`  },
+            { content: `20 / 10 / 2023`  },
+        ];
 
+        function loadProgressBars() {
+            var progressBarElements = document.querySelectorAll('.progress-bar');
+            j=0
+            for (var i = 0; i < progressBarElements.length; i++) {
+                progressBarElements[i].textContent = "FROM: "+data[j].content+"  "+"TO: "+data[j+1].content;
+                j+=2;
+            }
+        }
+
+        loadProgressBars();
+
+        function toggle(answerId) {
+            var answerElement = document.getElementById(answerId);
+            if (answerElement.style.display === "none" || answerElement.style.display === "") {
+                answerElement.style.display = "block";
+            } else {
+                answerElement.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
