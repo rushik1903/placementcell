@@ -11,31 +11,42 @@ body {
 .container2 {
   margin-bottom: 60px;
 }
-th{
+
+th {
   color: #fff;
   font-weight: 500 !important;
 }
-.outer {
+
+/* .outer {
   width: 250px;
   height: 250px;
   /* background: gray; */
-  border-radius: 250px;
-  /* position: relative; */
-}
-
-
+/* border-radius: 250px; */
+/* position: relative;} */
 
 
 .outer-1 {
-  background: conic-gradient(
-    white 3%,
-    #00ffe0 47%,
-    rgba(5, 0, 255, 0.8) 120%,
-    white 30%
-  );
+  /* background: conic-gradient(
+      white 0%,
+      white 3%,
+      #00ffe0 47%,
+      rgba(5, 0, 255, 0.8) 120%,
+      white 30%,
+      white 100%
+    ); */
+  background-size: 100% 100%;
+  background-position: 0% 0%;
 }
 
-.outer-2 {
+.outer {
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* .outer-2 {
   background: conic-gradient(
     white 12%,
     #00ffe0 47%,
@@ -51,7 +62,7 @@ th{
     rgba(5, 0, 255, 0.8) 120%,
     white 30%
   );
-}
+} */
 
 .inner {
   width: 180px;
@@ -70,9 +81,10 @@ th{
   left: 6px;
 }
 
-.my-color{
+.my-color {
   color: #214B8C;
 }
+
 .statsCard {
   border-radius: 0;
   /* width: 300px;
@@ -82,25 +94,30 @@ th{
 .container tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+
 .my-th {
   background-color: #214b8c !important;
 }
+
 .table {
   width: fit-content !important;
 }
+
 /* #my-table td{
   background-color: lightblue !important;
 } */
 
-table{
+table {
   margin-bottom: 2rem !important;
 }
+
 /* Media query for mobiles and tablets */
 @media only screen and (max-width: 770px) {
   .d-flex {
     flex-direction: column !important;
   }
 }
+
 @media only screen and (min-width: 600px) and (max-width: 992px) {
   .outer {
     transform: scale(0.8);
