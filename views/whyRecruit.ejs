@@ -226,57 +226,45 @@
 
     <section class="achieve">
       <h1 style="text-align: center;">Student Achievements</h1>
-      <!-- Carousel -->
-      <div id="demo" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators" id="mycarousel-indicators">
-          <li data-target="#demo" data-slide-to="0" class="active"></li>
-          <li data-target="#demo" data-slide-to="1"></li>
-          <li data-target="#demo" data-slide-to="2"></li>
-          <li data-target="#demo" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/achieve-1.jpg" alt="SAE" />
-            <div class="carousel-caption d-none d-md-block">
-              <h3 style="color: #fff;">SAE India M-Baja international competition</h3>
-              <p style="color: #fff;">SAE club stood in the Top-60 teams M-Baja international
-                competition organized by SAE INDIA at Pithampur, Indore</p>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="img/achieve-2.jpg" alt="AUV" />
-            <div class="carousel-caption d-none d-md-block">
-              <h3>SAUVC 2022</h3>
-              <p>AUV Society qualified for SAUVC 2022 as the top 30 teams</p>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="img/achieve-3.jpg" alt="MARS" />
-            <div class="carousel-caption d-none d-md-block">
-              <h3>ERC 2021</h3>
-              <p>Mars club ranked 21st globally and 7th in India.</p>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="img/achieve-4.jpg" alt="New York" />
-            <div class="carousel-caption d-none d-md-block">
-              <h3>MATE ROV 2021</h3>
-              <p>AUV society represented India in MATE ROV 2022</p>
-            </div>
+      <div class="card-grid">
+        <!-- Achievement Card 1 -->
+        <div class="card">
+          <img src="img/achieve-1.jpg" alt="SAE" />
+          <div class="card-content">
+            <h3>SAE India M-Baja international competition</h3>
+            <p>SAE club stood in the Top-60 teams M-Baja international competition organized by SAE INDIA at Pithampur, Indore</p>
           </div>
         </div>
-
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </a>
+    
+        <!-- Achievement Card 2 -->
+        <div class="card">
+          <img src="img/achieve-2.jpg" alt="AUV" />
+          <div class="card-content">
+            <h3>SAUVC 2022</h3>
+            <p>AUV Society qualified for SAUVC 2022 as the top 30 teams</p>
+          </div>
+        </div>
+    
+        <!-- Achievement Card 3 -->
+        <div class="card">
+          <img src="img/achieve-3.jpg" alt="MARS" />
+          <div class="card-content">
+            <h3>ERC 2021</h3>
+            <p>Mars club ranked 21st globally and 7th in India.</p>
+          </div>
+        </div>
+    
+        <!-- Achievement Card 4 -->
+        <div class="card">
+          <img src="img/achieve-4.jpg" alt="New York" />
+          <div class="card-content">
+            <h3>MATE ROV 2021</h3>
+            <p>AUV society represented India in MATE ROV 2022</p>
+          </div>
+        </div>
       </div>
     </section>
+    
     <%- include('templates/footer-1.ejs') -%>
       <script src="/scripts/whyRecruit.js"></script>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
