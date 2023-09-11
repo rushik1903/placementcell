@@ -58,9 +58,12 @@ body{
     font:'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     color: #FFFFFF;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow:visible; /* Hide overflow text */
+    max-width: 200px; 
 }
 .top-navbar-item{
     margin-left: auto;
