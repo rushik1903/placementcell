@@ -9,6 +9,21 @@ body {
   background-color: rgb(231, 231, 231);
   font-family: "Inter", sans-serif;
 }
+.section-box {
+  position: relative; /* Ensure the circle is positioned relative to the box */
+}
+
+.circle {
+  width: 100px; /* Diameter of the circle */
+  height: 100px; /* Diameter of the circle */
+  background-color: rgba(0, 0, 0, 0.5); /* Background color with 0.5 opacity */
+  border-radius: 50%; /* Makes the div circular */
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  right: 555;
+}
+
 .topImage {
   font-size: 1rem;
   /* height: 50vh; */

@@ -99,8 +99,21 @@ th {
   background-color: #214b8c !important;
 }
 
+/* Add shadow and curved borders to tables */
 .table {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
   width: fit-content !important;
+
+}
+
+/* Add a small text below each table */
+.table-caption {
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+  margin-top: 5px;
 }
 
 /* #my-table td{
