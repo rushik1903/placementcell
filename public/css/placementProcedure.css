@@ -124,32 +124,43 @@ body {
   color: #000000;
 }
 
+#step1{
+  background-color: lightskyblue;
+}
+
 #step2 {
   margin-top: 230px;
+  background-color: lightgreen;
 }
 
 #step3 {
   margin-top: 110px;
+  background-color: lightsalmon;
 }
 
 #step4 {
   margin-top: 260px;
+  background-color: lightgrey;
 }
 
 #step5 {
   margin-top: 210px;
+  background-color: lightgoldenrodyellow;
 }
 
 #step6 {
   margin-top: 170px;
+  background-color: lightblue;
 }
 
 #step7 {
   margin-top: 220px;
+  background-color: lightgreen;
 }
 
 #step8 {
   margin-top: 200px;
+  background-color: lightpink;
 }
 
 #link {
@@ -157,6 +168,8 @@ body {
   cursor: pointer;
   text-decoration: underline;
 }
+
+
 
 @media screen and (max-width: 900px) {
   .main {
@@ -229,11 +242,13 @@ body {
   .step-body-inner
   {
     font-size: 17px;
+    position: relative;
   }
    .step-no
   {
     position: relative;
   }
+  
 }
 
 
@@ -256,6 +271,6 @@ body {
   {
     position: relative;
   }
-
+  
 }
 

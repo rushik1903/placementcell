@@ -9,6 +9,106 @@
 	<link rel="stylesheet" href="/css/placementProcedure.css">
 	<link href="https://fonts.googleapis.com/css2?family=Habibi&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style>
+		.step-inner{
+			position: relative;
+		}
+		.invitation-background {
+			position: absolute;
+            top: 0;
+            right: 0;
+            transform-origin: top right; /* Set the transformation origin to the top right corner */
+            transform: translate(70%, 10%) rotate(45deg); /* Rotate the image by 45 degrees and center it */
+            width: 150px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+			z-index: -1;
+            opacity: 1.2; /* Adjust the opacity as needed */
+	}
+
+	.dates-background {
+			position: absolute;
+            top: 0;
+            right: 0;
+            transform-origin: top right; /* Set the transformation origin to the top right corner */
+            transform: translate(80%, 0%) rotate(45deg); /* Rotate the image by 45 degrees and center it */
+            width: 100px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+			z-index: -1;
+            opacity: 1.2; /* Adjust the opacity as needed */
+	}
+	.shortlist-background {
+			position: absolute;
+            top: 0;
+            right: 0;
+            transform-origin: top right; /* Set the transformation origin to the top right corner */
+            transform: translate(80%, 0%) rotate(45deg); /* Rotate the image by 45 degrees and center it */
+            width: 100px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+			z-index: -1;
+            opacity: 1.2; /* Adjust the opacity as needed */
+	}
+	.decision-background {
+			position: absolute;
+            top: 0;
+            right: 0;
+            transform-origin: top right; /* Set the transformation origin to the top right corner */
+            transform: translate(80%, 0%) rotate(45deg); /* Rotate the image by 45 degrees and center it */
+            width: 120px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+			z-index: -1;
+            opacity: 1.2; /* Adjust the opacity as needed */
+	}
+
+
+	.response-background {
+			position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: top left; /* Set the transformation origin to the top right corner */
+            transform: translate(-80%, -20%) rotate(-35deg); /* Rotate the image by 45 degrees and center it */
+            width: 110px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+			z-index: -1;
+            opacity: 1.2; /* Adjust the opacity as needed */
+	}
+
+	.registration-background {
+			position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: top left; /* Set the transformation origin to the top right corner */
+            transform: translate(-70%, -10%) rotate(-35deg); /* Rotate the image by 45 degrees and center it */
+            width: 130px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+			z-index: -1;
+            opacity: 1.2; /* Adjust the opacity as needed */
+	}
+
+	.evaluation-background {
+			position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: top left; /* Set the transformation origin to the top right corner */
+            transform: translate(-70%, -10%) rotate(-35deg); /* Rotate the image by 45 degrees and center it */
+            width: 130px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+			z-index: -1;
+            opacity: 1.2; /* Adjust the opacity as needed */
+	}
+
+	.conclusion-background {
+			position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: top left; /* Set the transformation origin to the top right corner */
+            transform: translate(-50%, 0%) rotate(-35deg); /* Rotate the image by 45 degrees and center it */
+            width: 130px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+			z-index: -1;
+            opacity: 1.2; /* Adjust the opacity as needed */
+	}
+
+	</style>
 </head>
 
 <body>
@@ -22,6 +122,7 @@
 					<div class="steps-left">
 						<div class="step" id="step1">
 							<div class="step-inner">
+								<img src="../img/invitation background.jpg" alt="Invitation Background" class="invitation-background">
 								<div class="step-top">
 									<div class="step-no">
 										<div class="step-no-inner">
@@ -50,6 +151,7 @@
 
 						<div class="step" id="step3">
 							<div class="step-inner">
+								<img src="../img/dates background.jpg" alt="Invitation Background" class="dates-background">
 								<div class="step-top">
 									<div class="step-no">
 										<div class="step-no-inner">
@@ -74,6 +176,7 @@
 
 						<div class="step" id="step5">
 							<div class="step-inner">
+								<img src="../img/shortlisted background.jpg" alt="Invitation Background" class="shortlist-background">
 								<div class="step-top">
 									<div class="step-no">
 										<div class="step-no-inner">
@@ -95,6 +198,7 @@
 
 						<div class="step" id="step7">
 							<div class="step-inner">
+								<img src="../img/decision background.jpg" alt="Invitation Background" class="decision-background">
 								<div class="step-top">
 									<div class="step-no">
 										<div class="step-no-inner">
@@ -121,6 +225,7 @@
 					<div class="steps-right">
 						<div class="step" id="step2">
 							<div class="step-inner">
+								<img src="../img/response background.png" alt="Invitation Background" class="response-background">
 								<div class="step-top">
 									<div class="step-no">
 										<div class="step-no-inner">
@@ -146,6 +251,7 @@
 
 						<div class="step" id="step4">
 							<div class="step-inner">
+								<img src="../img/registration background.jpg" alt="Invitation Background" class="registration-background">
 								<div class="step-top">
 									<div class="step-no">
 										<div class="step-no-inner">
@@ -170,6 +276,7 @@
 
 						<div class="step" id="step6">
 							<div class="step-inner">
+								<img src="../img/Interview background.png" class="evaluation-background">
 								<div class="step-top">
 									<div class="step-no">
 										<div class="step-no-inner">
@@ -195,6 +302,7 @@
 
 						<div class="step" id="step8">
 							<div class="step-inner">
+								<img src="../img/conclusion background.jpg" class="conclusion-background">
 								<div class="step-top">
 									<div class="step-no">
 										<div class="step-no-inner">
