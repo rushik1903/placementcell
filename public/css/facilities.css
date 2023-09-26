@@ -19,9 +19,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5); /* Background color with 0.5 opacity */
   border-radius: 50%; /* Makes the div circular */
   position: absolute;
-  top: 0;
-  overflow: hidden;
-  right: 555;
+
 }
 
 .topImage {

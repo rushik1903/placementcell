@@ -53,7 +53,7 @@ function drawMyChart() {
   ]);
 
   var options = {
-	title: "No. of offers branch-wise",
+	title: "No. of offers batch-wise",
 	  backgroundColor: "transparent",
 	  width: 500,
 	  height: 300,
