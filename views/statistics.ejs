@@ -31,8 +31,9 @@
               </div>
             </div>
             <div class="mt-3 text-center" id="box1"
-              style="color: black; font-weight: 300;overflow:visible; font: Inter;font-style: normal; font-size: 1.5rem;"><b
-                style="padding-right: 25% ;overflow:visible;">2022-2023</b>
+              style="color: black; font-weight: 300;overflow:visible; font: Inter;font-style: normal; font-size: 1.5rem;">
+              <b class="x">2022-2023</b>
+                <!-- padding-right: 25% ;overflow:visible; -->
             </div>
 
 
@@ -47,7 +48,7 @@
             </div>
             <div class="mt-3 text-center" id="box2"
               style="color: black; font-weight: 300;font: Inter;font-style: normal; font-size: 1.5rem;"><b
-                style="padding-right: 25%">2021-2022</b>
+              class="x" >2021-2022</b>
             </div>
           </div>
         </div>
@@ -61,7 +62,7 @@
             </div>
             <div class="mt-3 text-center" id="box3"
               style="color: black; font-weight: 300;font: Inter;font-style: normal; font-size: 1.5rem;"><b
-                style="padding-right: 25%">2020-2021</b>
+              class="x"  >2020-2021</b>
             </div>
 
 
@@ -196,6 +197,8 @@
             $('#box2').css('width', '25%')
             $('#box2').css('paddingBottom', '5%')
             $('#box3').css('width', '25%')
+            
+            // $('#x').css('overflow', 'visible')
             // $('#box3').css('paddingBottom','5%')
             // add class to $('.d-flex')
             $('.d-flex').addClass('align-items-center');
@@ -203,7 +206,8 @@
             console.log("desktop");
             $('#branch-wise').css('width', '500px');
             $('#degree-wise').css('width', 'auto');
-            $('#title').css('paddingTop', '13%')
+            $('#title').css('paddingTop', '13%');
+            $('.x').css('paddingRight', '25%');
             // remove class to $('.d-flex')
             $('.d-flex').removeClass('align-items-center');
           }
