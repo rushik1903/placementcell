@@ -27,14 +27,28 @@ body {
 .box:hover .mail {
   display: none;
 }
-
+.box_ {
+  margin-bottom: 20px;
+  background: rgba(219, 218, 248, 0.6);
+  border-radius: 10px;
+  height: 325px;
+  margin-left: 5px;
+  margin-right: 55px;
+  padding: 60px 10px;
+  position: relative;
+  z-index: 0;
+  transition: 0.2s all;
+  /* border-width: 0; */
+  width: 200px;
+  font-family: "Inter", sans-serif;
+}
 .box {
   margin-bottom: 20px;
   background: rgba(219, 218, 248, 0.6);
   border-radius: 10px;
   height: 325px;
   margin-left: 5px;
-  margin-right: 5px;
+  margin-right: 55px;
   padding: 60px 10px;
   position: relative;
   z-index: 0;
