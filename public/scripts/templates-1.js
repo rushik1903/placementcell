@@ -18,6 +18,5 @@ function open_dd(id,title_id,rotate_icon,degree){
 }
 window.onload=function(){
     var x= document.getElementsByClassName("top-navbar")[0].clientHeight
-    console.log(x);
     document.getElementById("in-spacing").style.marginTop=String(x)+"px";
 }
